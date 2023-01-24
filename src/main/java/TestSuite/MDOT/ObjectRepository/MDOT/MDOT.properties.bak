@@ -1,0 +1,1628 @@
+**********************************MDOT_LOGIN_START*************************************************
+
+#Login/StartPage
+txt_ACF2UserID=xpath://input[@id='UserId']
+txt_password=xpath://input[@id='Password']
+button_login=xpath://button[@type='submit']
+button_okWarning=xpath://button/span[text()="OK"]
+banner_passWordNotMatched=xpath://div[text()=' PASSWORD NOT MATCHED ']
+banner_logInIDNotFound=xpath://div[text()=' LOGONID NOT FOUND ']
+banner_warningLoginMessage=xpath://p[text()='Warning! You are entering test region. Any activity here will not have impact in Prod.']
+
+**********************************MDOT_LOGOUT_START************************************************
+
+#Logout
+link_logout=xpath://i[@title="Logout"]
+button_logout=xpath://span[text()="Logout"]
+
+**********************************MDOT_LOGOUT_STOP*************************************************
+
+**********************************MDOT_Home_START**************************************************
+
+#MDOTHomePage
+
+#AccountsPayableTab
+link_accountsPayable=xpath://span[text()="Accounts Payable"]
+#ProcurementTransactionsTab
+link_procurementTransactions=xpath://span[text()="Procurement Transactions"]
+#Receiving
+link_receiving=xpath://span[text()="Receiving"]
+#TableMaintenance
+link_tableMaintenance=xpath://span[text()="Table Maintenance"]
+#SystemManagement(Security)
+link_systemManagement=xpath://span[text()="Systems Management"]
+#ChangeOrderProcessingTab	
+link_changeOrderProcessing=xpath://span[text()="Change Order Processing"]
+#ReportProcessing
+link_reportProcessing=xpath://span[text()="Report Processing"]
+#DocumentAuthorization
+link_documentAuthorization=xpath://span[text()="Document Authorization"]
+
+**********************************MDOT_Home_STOP***************************************************
+
+**********************************DocumentSearch_Start*********************************************
+
+#DocumentSearch
+dropDownClick_documentType=xpath://mat-select[@name="selectedDocType"]
+link_searchButtonDocSearch=xpath://span[contains(text(),"Search")]
+link_viewDoc1DocumentSearch=xpath://label[contains(text(),"Showing 1")]/following::tbody[@role="rowgroup"]/tr[1]/td[3]/button/span[contains(text(),"View Doc>")]
+link_nextDocumentSearch=xpath://span[contains(text(),"Next >")]
+link_previousDocumentSearch=xpath://span[contains(text(),"< Previous")]
+button_closeDocumentSearch=xpath://span[contains(text(),"Close ")]
+waitLabel_noSearchResults=xpath://td[text()="There are currently no search results"]
+txt_searchDocument=xpath://input[@id="inputtext"]
+txt_docID1DocumentSearch=xpath://label[contains(text(),"Showing 1")]/following::tbody[@role="rowgroup"]/tr[1]/td[2]
+dropDownSelect_documentType=xpath://mat-select[@name="selectedDocType"]
+dropDownClick_PODocumentType=xpath://mat-option[@value='PO']
+dropDownClick_VCDocumentType=xpath://mat-option[@value="VC"]
+
+**********************************DocumentSearch_Stop**********************************************
+
+**********************************Upload/AttachFiles_Start*****************************************
+
+#Upload/AttachFiles
+link_browse=xpath://label[@class="browse"]
+button_uploadAttachments=xpath://button/span[contains(text(),"Upload")]
+banner_fileUploadSuccessful=xpath://div[text()=" Files Uploaded successfully "]
+button_deleteUpload=xpath://div[@class='file-data']/child::div[text()="Delete"]
+txt_addDescriptionUpload=xpath://textarea[@placeholder="Add Description"]
+link_download=xpath://div[contains(text(),'Download') and @class="title-copy"]
+button_deleteDownload=xpath://tbody[@role="rowgroup"]/tr/td[4]/span[text()="Delete"]
+button_deteleConfirm=xpath://span[text()='Delete' and @class="mat-button-wrapper"]
+button_cancelConfirm=xpath://span[text()='Cancel' and @class="mat-button-wrapper"]
+button_downloadButton=xpath://span[@class='downloadAction']
+link_closeAttachments=xpath://mat-icon[text()='close']
+button_doneAttachments=xpath://button/span[contains(text(),"Done")]
+txt_uploadDocs=xpath://input[@id="undefined"]
+
+**********************************Upload/AttachFiles_Stop******************************************
+
+**********************************Print_Start******************************************************
+
+#Print
+link_printIcon=xpath://mat-icon[text()="print"]
+
+**********************************Print_Stop*******************************************************
+
+**********************************BannerMessageClose_Start*****************************************
+
+#BannerMessageClose
+link_closeBannerMessages=xpath://div[text()="X"]
+
+**********************************BannerMessageClose_Stop******************************************
+
+**********************************ProcurementTransactions_Start************************************
+
+#ProcurementTransactionsTab
+link_documentSearchProcurementTransactions=xpath://a[contains(text(),"Document Search")]
+link_requisition=xpath://a[text()="Requisition"]
+link_ITBBidProcessing=xpath://a[text()="ITB & Bid Processing"]
+link_purchaseOrder=xpath://a[text()="Purchase Order"]
+link_directPurchaseOrder=xpath://a[text()="Direct Purchase Order"]
+link_blanketPurchaseOrder=xpath://a[text()="Blanket Purchase Order"]
+link_maximoQueries=xpath://a[text()="Maximo Queries"]
+
+**********************************ProcurementTransactions_Stop*************************************
+
+**********************************Requisition_Start************************************************
+
+#Requisition
+link_requisitionInquiryProcessing=xpath://a[text()="Requisition Inquiry/ Processing"]
+link_requisitionOverview=xpath://a[text()="Requisition Overview"]
+
+**********************************Requisition_Stop*************************************************
+
+**********************************RequisitionInquiryProcessing_Start*******************************
+
+#RequisitionInquiryProcessing
+button_createNewRequisition=xpath://span[text()="+ Create New Requisition"]
+dropDownClick_searchCriteriaDeptRequisitionInquiryProcessing=xpath://mat-select[@id="searchCriteria"]
+link_searchRequisitionInquiryProcessing=xpath://span[text()="search"]
+banner_recordDoesNotExistRequisitionInquiryProcessing=xpath://div[text()=" RECORD DOES NOT EXIST "]
+
+**********************************RequisitionInquiryProcessing_Stop********************************
+
+**********************************RequisitionOverview_Start****************************************
+
+#RequisitionOverview
+button_addHeaderInformationRequisition=xpath://span[text()="Add Header Information"]
+button_addDetailInformationRequisition=xpath://span[text()="Add Detail Information"]
+button_addAccountingInformationRequisition=xpath://span[text()="Add Accounting Information"]
+button_submitRequisition=xpath://span[contains(text(),'Submit')]
+link_viewAddAttachmentsRequisition=xpath://span[text()=" file_present "]/following::u[text()="View/Add Attachments (0)"]
+getRequisitionId=xpath://div[@class="title"]/span
+banner_requisitionPostedOrAppr=xpath://div[text()=" REQUISITION POSTED "]
+banner_requisitionPrinted=xpath://div[text()=" REQUISITION PRINTED "]
+link_editRequisitionDetailEntry=xpath://mat-card[2]/div/div/div[2]/button/span/span[text()="Edit"]
+link_editRequisitionHeaderInfo=xpath://mat-card[1]/div/div/div[2]/button/span/span[text()="Edit"]
+banner_requisitionOverviewHeader=xpath://div[text()="Requisition Overview"]
+link_viewAddQuoteReqOverview=xpath://u[contains(text(),"View/Add Quote")]
+link_copyRequisitionOverview=xpath://div[text()="Copy"]
+banner_requisitionCopied=xpath://div[contains(text(),"SUCCESSFULLY COPIED")]
+link_deleteRequisitionOverview=xpath://div[text()="Delete"]
+button_confirmDeleteRequisitionOverview=xpath://button/span[text()="Delete"]
+banner_requisitionDeleted=xpath://div[text()=" RECORD DELETED "]
+label_commodity1InformationRequisition=xpath://mat-card[2]/div/div[3]/div[1]/div
+label_Accounting1InformationRequisition=xpath://tbody/tr[@class='mat-row cdk-row ng-star-inserted'][1]
+button_createPORequisition=xpath://span[text()="+ Create PO"]
+
+**********************************RequisitionOverview_Stop*****************************************
+
+**********************************RequisitionHeaderInformation_Start*******************************
+
+#RequisitionHeaderInformation
+txt_departmentID=xpath://input[@id="departmentID"]
+link_searchDepartments=xpath://div[text()="Search Departments"]
+txt_searchDepartmentID=xpath://input[@placeholder="  Type in a Departement Name or ID"]
+button_searchButton=xpath://span[text()="search"]
+link_selectingDepartmentID=xpath://tbody[@role="rowgroup"]/child::tr
+button_searchDepartmentID=xpath://span[text()=" Select Department "]
+dropDownClick_interfaceTypeReqHeader=xpath://mat-select[@id="INTTYPE"]
+txt_interfaceTypeReqHeader=xpath://input[@name="InterfType"]
+dropDownClick_documentTypeReqHeaderInfo=xpath://mat-select[@id="DOCTYPE"]
+txt_dueDateRequisition=xpath://input[@name='DUEDATE']
+radioButton_expandedAccountingRequisition=xpath://mat-radio-group[@name='expandAccounting']//input[@value='true']
+dropDownClick_appropriationYearReqHeader=xpath://mat-select[@id="APYR1"]
+txt_indexRequisition=xpath://input[@id='INDEX1']
+txt_programCostAccountRequisition=xpath://input[@id='PCA1']
+txt_agencyObjectRequisition=xpath://input[@id='AOBJ1']
+txt_subGranteeRequisitionExp=xpath://input[@id='SUBGR1']
+txt_bankNumberRequisitionExp=xpath://input[@id='BANKNO1']
+txt_recurringTransactionIndicatorRequisitionExp=xpath://input[@id='RTI1']
+txt_capitalizedIndicatorRequisitionExp=xpath://input[@id='CAP1']
+txt_propertyNumberRequisitionExp=xpath://input[@id='PROPNO1']
+txt_multiPurposeCodeRequisitionExp=xpath://input[@id='MPCODE1']
+button_nextRequisitionHeader=xpath://div/button[contains(text(),'Next')]
+waitLabel_programCostAccountRequisiton=xpath://label[text()="Program Cost Account"]
+txt_telephoneReqHeader=xpath://input[@name="Telephone"]
+txt_extensionReqHeader=xpath://input[@id="EXT"]
+txt_addressReqHeader=xpath://input[@id="ADDR1"]
+banner_RStartsErrorMessage=xpath://div[contains(text(),"R*STARS ERROR")]
+txt_blanketPOIDReqHeader=xpath://input[@id="BPDOC"]
+link_searchVendorsReqHeader=xpath://div[contains(text(),"Search Vendors")]
+link_searchBPOVendorsReqHeader=xpath://div[contains(text(),"Search BPO Vendors")]
+txt_vendorIDReqHeader=xpath://input[@id="VENDNO"]
+dropDownClick_distributionMethodReqHeader=xpath://mat-select[@id="DISIND"]
+txt_percentageReqHeader=xpath://input[@id="AMT1"]
+button_addAccountingLineReqHeader=xpath://button/p[text()="Add Accounting Line"]
+dropDownClick_appropriationYearReqHeader2=xpath://mat-select[@id="APYR2"]
+txt_indexRequisition2=xpath://input[@id='INDEX2']
+txt_programCostAccountRequisition2=xpath://input[@id='PCA2']
+txt_agencyObjectRequisition2=xpath://input[@id='AOBJ2']
+txt_percentageReqHeader2=xpath://input[@id="AMT2"]
+link_addNoteReqHeaderEntry=xpath://div[text()="Add Note"]
+txt_addNotesReqHeaderEntry=xpath://textarea[@id="InputNote"]
+link_saveTextReqHeaderEntry=xpath://div[text()="Save Note"]
+link_viewAddTermsReqHeaderEntry=xpath://div[text()="View/Add Terms"]
+
+**********************************RequisitionHeaderInformation_Stop********************************
+
+**********************************RequisitionDetailSummary_Start***********************************
+
+#RequisitionDetailSummary
+button_addCommodityRequisition=xpath://span[contains(text(),'Add Commodity')]
+button_nextRequisitionDetail=xpath://span[contains(text(),'Next')]
+
+**********************************RequisitionDetailSummary_Stop************************************
+
+**********************************RequisitionDetailEntry_Start*************************************
+
+#RequisitionDetailEntry
+txt_commodityIDRequisition=xpath://input[@name='commodityId']
+txt_quantityRequisition=xpath://input[@name='quantity']
+banner_ReqCommoditySaveAgain=xpath://div[text()=" COMMODITY ON A BPO, REPEAT LAST ACTION AGAIN TO CONFIRM SAVE "]
+button_saveAndReturnRequisition=xpath://span[contains(text(),'Save and Return')]
+banner_commodityInfoReqDetailEntry=xpath://div[contains(text(),'Commodity Info')]
+link_editRequisitionCommInfo=xpath://span[text()="Edit"]
+link_selectBPOCommodity=xpath://div[text()="Select BPO Commodity"]
+link_selectCommodityReqDetailEntry=xpath://div[text()="Select Commodity"]
+txt_unitCostReqDetailEntry=xpath://input[@id="UNCOSTA"]
+radioButton_expandedAccountingReqDetailEntry=xpath://mat-radio-group[@id='expandAccounting']//input[@value='true']
+button_okExpandedAccountingReqDetailEntry=xpath://span[text()="Ok"]
+dropDownClick_agencyReqDetailEntry=xpath://mat-select[@id="AGY1"]
+dropDownClick_appropriationYearReqDetailEntry=xpath://mat-select[@id="APYR1"]
+txt_indexReqDetailEntry=xpath://input[@id="INDEX1"]
+txt_programCostAccountReqDetailEntry=xpath://input[@id="PCA1"]
+txt_objectReqDetailEntry=xpath://input[@id='OBJ1']
+txt_agencyObjectReqDetailEntry=xpath://input[@id="AOBJ1"]
+txt_grantPhaseNumberReqDetailEntry=xpath://input[@id='GRTPH1']
+txt_projectPhaseNumberReqDetailEntry=xpath://input[@id='PRJPH1']
+txt_AgencyCode1AccInfo1ReqDetailEntry=xpath://input[@id='AG1AG1231']
+txt_AgencyCode2AccInfo1ReqDetailEntry=xpath://input[@id='AG2AG1231']
+txt_AgencyCode3AccInfo1ReqDetailEntry=xpath://input[@id='AG3AG1231']
+txt_amountReqDetailEntry=xpath://input[@id="AMT1"]
+txt_capitalizedIndicatorReqDetailEntry=xpath://input[@id='CAP1']
+dropDownClick_agency2ReqDetailEntry=xpath://mat-select[@id="AGY2"]
+dropDownClick_appropriationYear2ReqDetailEntry=xpath://mat-select[@id="APYR2"]
+txt_index2ReqDetailEntry=xpath://input[@id="INDEX2"]
+txt_programCostAccount2ReqDetailEntry=xpath://input[@id="PCA2"]
+txt_object2ReqDetailEntry=xpath://input[@id='OBJ1']
+txt_agencyObject2ReqDetailEntry=xpath://input[@id="AOBJ2"]
+txt_grantPhaseNumber2ReqDetailEntry=xpath://input[@id='GRTPH2']
+txt_projectPhaseNumber2ReqDetailEntry=xpath://input[@id='PRJPH2']
+txt_AgencyCode1AccInfo2ReqDetailEntry=xpath://input[@id='AG1AG1232']
+txt_AgencyCode2AccInfo2ReqDetailEntry=xpath://input[@id='AG2AG1232']
+txt_AgencyCode3AccInfo2ReqDetailEntry=xpath://input[@id='AG3AG1232']
+txt_amount2ReqDetailEntry=xpath://input[@id="AMT2"]
+txt_capitalizedIndicator2ReqDetailEntry=xpath://input[@id='CAP2']
+dropDownClick_agency3ReqDetailEntry=xpath://mat-select[@id="AGY3"]
+dropDownClick_appropriationYear3ReqDetailEntry=xpath://mat-select[@id="APYR3"]
+txt_index3ReqDetailEntry=xpath://input[@id="INDEX3"]
+txt_programCostAccount3ReqDetailEntry=xpath://input[@id="PCA3"]
+txt_object3ReqDetailEntry=xpath://input[@id='OBJ3']
+txt_agencyObject3ReqDetailEntry=xpath://input[@id="AOBJ3"]
+txt_grantPhaseNumber3ReqDetailEntry=xpath://input[@id='GRTPH3']
+txt_projectPhaseNumber3ReqDetailEntry=xpath://input[@id='PRJPH3']
+txt_AgencyCode1AccInfo3ReqDetailEntry=xpath://input[@id='AG1AG1233']
+txt_AgencyCode2AccInfo3ReqDetailEntry=xpath://input[@id='AG2AG1233']
+txt_AgencyCode3AccInfo3ReqDetailEntry=xpath://input[@id='AG3AG1233']
+txt_amount3ReqDetailEntry=xpath://input[@id="AMT3"]
+txt_capitalizedIndicator3ReqDetailEntry=xpath://input[@id='CAP3']
+dropDownClick_agency4ReqDetailEntry=xpath://mat-select[@id="AGY4"]
+dropDownClick_appropriationYear4ReqDetailEntry=xpath://mat-select[@id="APYR4"]
+txt_index4ReqDetailEntry=xpath://input[@id="INDEX4"]
+txt_programCostAccount4ReqDetailEntry=xpath://input[@id="PCA4"]
+txt_object4ReqDetailEntry=xpath://input[@id='OBJ4']
+txt_agencyObject4ReqDetailEntry=xpath://input[@id="AOBJ4"]
+txt_grantPhaseNumber4ReqDetailEntry=xpath://input[@id='GRTPH4']
+txt_projectPhaseNumber4ReqDetailEntry=xpath://input[@id='PRJPH4']
+txt_AgencyCode1AccInfo4ReqDetailEntry=xpath://input[@id='AG1AG1234']
+txt_AgencyCode2AccInfo4ReqDetailEntry=xpath://input[@id='AG2AG1234']
+txt_AgencyCode3AccInfo4ReqDetailEntry=xpath://input[@id='AG3AG1234']
+txt_amount4ReqDetailEntry=xpath://input[@id="AMT4"]
+txt_capitalizedIndicator4ReqDetailEntry=xpath://input[@id='CAP4']
+dropDownClick_agency5ReqDetailEntry=xpath://mat-select[@id="AGY5"]
+dropDownClick_appropriationYear5ReqDetailEntry=xpath://mat-select[@id="APYR5"]
+txt_index5ReqDetailEntry=xpath://input[@id="INDEX5"]
+txt_programCostAccount5ReqDetailEntry=xpath://input[@id="PCA5"]
+txt_object5ReqDetailEntry=xpath://input[@id='OBJ5']
+txt_agencyObject5ReqDetailEntry=xpath://input[@id="AOBJ5"]
+txt_grantPhaseNumber5ReqDetailEntry=xpath://input[@id='GRTPH5']
+txt_projectPhaseNumber5ReqDetailEntry=xpath://input[@id='PRJPH5']
+txt_AgencyCode1AccInfo5ReqDetailEntry=xpath://input[@id='AG1AG1235']
+txt_AgencyCode2AccInfo5ReqDetailEntry=xpath://input[@id='AG2AG1235']
+txt_AgencyCode3AccInfo5ReqDetailEntry=xpath://input[@id='AG3AG1235']
+txt_amount5ReqDetailEntry=xpath://input[@id="AMT5"]
+txt_capitalizedIndicator5ReqDetailEntry=xpath://input[@id='CAP5']
+dropDownClick_agency6ReqDetailEntry=xpath://mat-select[@id="AGY6"]
+dropDownClick_appropriationYear6ReqDetailEntry=xpath://mat-select[@id="APYR6"]
+txt_index6ReqDetailEntry=xpath://input[@id="INDEX6"]
+txt_programCostAccount6ReqDetailEntry=xpath://input[@id="PCA6"]
+txt_object6ReqDetailEntry=xpath://input[@id='OBJ6']
+txt_agencyObject6ReqDetailEntry=xpath://input[@id="AOBJ6"]
+txt_grantPhaseNumber6ReqDetailEntry=xpath://input[@id='GRTPH6']
+txt_projectPhaseNumber6ReqDetailEntry=xpath://input[@id='PRJPH6']
+txt_AgencyCode1AccInfo6ReqDetailEntry=xpath://input[@id='AG1AG1236']
+txt_AgencyCode2AccInfo6ReqDetailEntry=xpath://input[@id='AG2AG1236']
+txt_AgencyCode3AccInfo6ReqDetailEntry=xpath://input[@id='AG3AG1236']
+txt_amount6ReqDetailEntry=xpath://input[@id="AMT6"]
+txt_capitalizedIndicator6ReqDetailEntry=xpath://input[@id='CAP6']
+dropDownClick_agency7ReqDetailEntry=xpath://mat-select[@id="AGY7"]
+dropDownClick_appropriationYear7ReqDetailEntry=xpath://mat-select[@id="APYR7"]
+txt_index7ReqDetailEntry=xpath://input[@id="INDEX7"]
+txt_programCostAccount7ReqDetailEntry=xpath://input[@id="PCA7"]
+txt_object7ReqDetailEntry=xpath://input[@id='OBJ7']
+txt_agencyObject7ReqDetailEntry=xpath://input[@id="AOBJ7"]
+txt_grantPhaseNumber7ReqDetailEntry=xpath://input[@id='GRTPH7']
+txt_projectPhaseNumber7ReqDetailEntry=xpath://input[@id='PRJPH7']
+txt_AgencyCode1AccInfo7ReqDetailEntry=xpath://input[@id='AG1AG1237']
+txt_AgencyCode2AccInfo7ReqDetailEntry=xpath://input[@id='AG2AG1237']
+txt_AgencyCode3AccInfo7ReqDetailEntry=xpath://input[@id='AG3AG1237']
+txt_amount7ReqDetailEntry=xpath://input[@id="AMT7"]
+txt_capitalizedIndicator7ReqDetailEntry=xpath://input[@id='CAP7']
+link_addAnotherLineReqDetailEntry=xpath://a[text()="+Add another line"]
+label_estimatedTotalCostReqHeaderEntry=xpath://div[@id="cost"]
+label_currentAccountingAmountReqHeaderEntry=xpath://div[@id="costCA"]
+
+**********************************RequisitionDetailEntry_Stop**************************************
+
+**********************************QuotationsRequisition_Start**************************************
+
+#QuotationsRequisition
+txt_vendorIDQuotationsReq=xpath://input[@id="VENDOR1"]
+txt_commentsQuotationsReq=xpath://textarea[@id="Comments"]
+button_saveQuotationsReq=xpath://button/p[contains(text(),"Save")]
+banner_recordSavedQuotationsReq=xpath://div[contains(text()," RECORDS SAVED ")]
+
+**********************************QuotationsRequisition_Stop***************************************
+
+**********************************BPOVendorSelection_Start*****************************************
+
+#BPOVendorSelection
+tableRow_BPOVendorSelection=xpath://tbody/tr[1]
+button_selectBPOVendor=xpath://button/span[text()="Select Vendor"]
+txt_typeVendorIDNameBPOVendorSelection=xpath://input[@id="inputtext"]
+button_searchBPOVendors=xpath://button/span[text()="Search"]
+button_closeBPOVendorSelection=xpath://mat-icon[text()="close"]
+
+**********************************BPOVendorSelection_Stop******************************************
+
+**********************************BPOCommoditySelection_Start**************************************
+
+#BPOCommoditySelection
+heading_BPOCommoditySelection=xpath://h2[text()="BPO Commodity Selection"]
+txt_typeInCommodityNameID=xpath://input[@placeholder="  Type in a Commodity Name or ID "]
+button_searchBPOCommoditySelection=xpath://button/span[text()="Search"]
+tableRow_BPOCommoditySelection=xpath://tbody/tr[1]
+tableRow2_BPOCommoditySelection=xpath://tbody/tr[2]
+button_selectCommodityBPOCommoditySelection=xpath://button/span[text()="Select Commodity"]
+
+**********************************BPOCommoditySelection_Stop***************************************
+
+
+**********************************VendorsTableInquiry_Start****************************************
+
+#VendorTableInquiry
+txt_vendorName=xpath://input[@placeholder="  Type in a Vendor Name"]
+button_searchVendorName=xpath://button/span[text()="search"]
+button_viewDetailVendorName=xpath://h2[contains(text(),"Vendor Table Inquiry ")]/following::tbody[@role="rowgroup"]/tr[1]/td[5]/button/span[contains(text(),"View Detail >")]
+txt_vendorIDVendorTable=xpath://h2[contains(text(),"Vendor Table Inquiry ")]/following::tbody[@role="rowgroup"]/tr[1]/td[3]
+button_selectVendorVendorTable=xpath://button/span[text()=" Select Vendor "]
+
+**********************************VendorsTableInquiry_Stop*****************************************
+
+**********************************CommodityTableInquiry_Start**************************************
+
+#CommodityTableInquiry
+txt_commodityName=xpath://input[@placeholder="  Type in a Commodity Name "]
+button_searchCommodityName=xpath://button/span[text()="Search"]
+button_viewDetailCommodityName=xpath://h2[contains(text(),"Commodity Table Inquiry")]/following::tbody[@role="rowgroup"]/tr[1]/td[7]/button/span[contains(text(),"View >")]
+txt_commodityIDCommodityTable=xpath://h2[contains(text(),"Commodity Table Inquiry")]/following::tbody[@role="rowgroup"]/tr[1]/td[2]
+button_selectCommodityCommodityTable=xpath://button/span[text()="Select Commodity"]
+
+**********************************CommodityTableInquiry_Stop***************************************
+
+**********************************AccountsPayable_Start********************************************
+
+#AccountsPayableTab
+link_documentSearchAccountsPayable=xpath://a[text()="Document Search"]
+link_invoice=xpath://a[text()="Invoice"]
+link_voucher=xpath://a[text()="Voucher"]
+link_directVoucher=xpath://a[text()=" Direct Voucher"]
+
+**********************************AccountsPayable_Stop*********************************************
+
+**********************************DirectVoucher_Start**********************************************
+
+#DirectVoucher
+link_directVoucherInquiryProcessing=xpath://a[text()="Direct Voucher Inquiry/ Processing"]
+link_directVoucherOverview=xpath://a[text()="Direct Voucher Overview"]
+
+**********************************DirectVoucher_Stop***********************************************
+
+**********************************DirectVoucherInquiryProcessing_Start*****************************
+
+#DirectVoucherInquiryProcessing
+button_createNewDV=xpath://span[text()=" + Create New Direct Voucher "]
+
+**********************************DirectVoucherInquiryProcessing_Stop******************************
+
+**********************************DirectVoucherOverview_Start**************************************
+
+#DirectVoucherOverview
+button_addHeaderInformationDV=xpath://span[text()=" Add Header Information "]
+button_addDetailEntryDV=xpath://span[text()=" Add Detail Entry "]
+button_addPropertyCaptureDV=xpath://span[text()=" Add Property Capture "]
+button_addAccountingInformationDV=xpath://span[text()="Add Accounting Information"]
+button_submitDV=xpath: //span[contains(text(),"Submit")]
+banner_printDV=xpath://div[contains(text(),"VOUCHER PRINTED")]
+banner_DVPosted=xpath://div[@class="errorboxY ng-star-inserted"]
+label_DVStatusPosted=xpath://span[contains(text(),"POST")]
+getDirectVoucherId=xpath://div[@class="title"]/span
+link_deleteOverviewDV=xpath://div[text()="Delete"]
+button_confirmDeleteOverviewDV=xpath://button/span[text()="Delete"]
+banner_deleteDV=xpath://div[text()=" RECORD DELETED "]
+link_editHeaderEntryDV=xpath://mat-card[1]/div/div/div[2]/button/span/span[text()="Edit"]
+
+**********************************DirectVoucherOverview_Stop***************************************
+
+**********************************DirectVoucherHeader_Start****************************************
+
+#DirectVoucherHeader
+dropDownClick_interfaceTypeHeaderDV=xpath://mat-select[@id="IntfType"]
+txt_interfaceTypeHeaderDV=xpath://input[@id="INTTYPE"]
+dropDownClick_documentTypeHeaderDV=xpath://mat-select[@id="DOCTYPE"]
+txt_vendorInvoiceNumberDV=xpath://input[@id="IVCNO"]
+txt_invoiceDateDV=xpath://input[@id="IVCDATE"]
+txt_invoiceReceivingDateDV=xpath://input[@id="IVRECDT"]
+txt_vendorIDDV=xpath://input[@id="VENDNO"]
+dropDownClick_distributionMethodDVHeader=xpath://mat-select[@id="DISIND"]
+dropDownClick_appropriationYearDV=xpath://mat-select[@id="APYR1"]
+txt_indexDV=xpath://input[@id="INDEX1"]
+txt_programCostAccountDV=xpath://input[@id='PCA1']
+txt_agencyObjectDV=xpath://input[@id='AOBJ1']
+txt_percentageDVHeader=xpath://input[@id="AMT1"]
+dropDownClick_appropriationYearDV1=xpath://mat-select[@id="APYR2"]
+txt_indexDV1=xpath://input[@id="INDEX2"]
+txt_programCostAccountDV1=xpath://input[@id='PCA2']
+txt_agencyObjectDV1=xpath://input[@id='AOBJ2']
+txt_percentageDVHeader1=xpath://input[@id="AMT2"]
+button_nextDVHeaderEntry=xpath://button[contains(text(),'Next')]
+button_addAccountingLineDV=xpath://button/p[text()="Add Accounting Line"]
+icon_printDV=xpath://mat-icon[contains(text(),"print")]
+button_calculateRetainageHeaderDV=xpath://button/span[text()="Calculate Retainage"]
+banner_retainageCalculatedHeaderDV=xpath://div[text()=" RETAINED AMOUNT CALCULATED "]
+txt_BPOIDHeaderDV=xpath://input[@id="BPOID"]
+button_BPOVendorHeaderDV=xpath://button/span[text()=" Select Vendor from BPO "]
+link_BPOCommodityHeaderDV=xpath://div[text()="Select BPO Commodity"]
+txt_commodityIDHeaderDV=xpath://input[@id="COMMID"]
+txt_quantityHeaderDV=xpath://input[@id="LINQTY"]
+txt_unitCostHeaderDV=xpath://input[@id="UNCOST"]
+txt_retainageAmountDV=xpath://input[@id="RETNAMT"]
+
+**********************************DirectVoucherHeader_Stop*****************************************
+
+**********************************DirectVoucherDetailSummary_Start*********************************
+
+#DirectVoucherDetailSummary
+button_addCommodityDV=xpath://span[contains(text()," Add Commodity ")]
+button_nextDVDetailSummary=xpath://span[contains(text(),"Next")]
+card_commodityDV=xpath://div[@class='selectionContainer']
+
+**********************************DirectVoucherDetailSummary_Stop**********************************
+
+**********************************DirectVoucherDetailEntry_Start***********************************
+
+#DirectVoucherDetailEntry
+txt_commodityIDDetailEntryDV=xpath://input[@id='COMIDA']
+txt_quantityDetailEntryDV=xpath://input[@id='LINQTYA']
+txt_unitCostDetailEntryDV=xpath://input[@id='UNCOSTA']
+dropDownClick_appropriationYearDetailEntryDV=xpath://mat-select[@id="APYR1"]
+txt_indexDetailEntryDV=xpath://input[@id="INDEX1"]
+txt_programCostAccountDetailEntryDV=xpath://input[@id='PCA1']
+txt_agencyObjectDetailEntryDV=xpath://input[@id='AOBJ1']
+txt_amountDetailEntryDV=xpath://input[@id="AMT1"]
+label_estimatedTotalCostDVHeaderEntry=xpath://div[@id="cost"]
+label_currentAccountingAmountDVHeaderEntry=xpath://div[@id="costCA"]
+button_saveAndReturnDetailEntryDV=xpath://button[contains(text(),"Save and Return")]
+link_BPOCommodityDetailEntryDV=xpath://div[text()="Select BPO Commodity"]
+
+**********************************DirectVoucherDetailEntry_Stop************************************
+
+**********************************DVPropertyCaptureSummary_Start***********************************
+
+#DirectVoucherPropertyCaptureSummay
+banner_inquirySuccessfulDVPropertyCaptureSummary=xpath://div[text()=" INQUIRY SUCCESSFUL, TRANSACTION READY FOR UPDATE "]
+button_selectCommodityDVPropertyCaptureSummary=xpath://mat-card[@class="mat-card mat-focus-indicator cardContainer"]
+button_createPropertyCaptureDVSummary=xpath://span[text()="Create Property Capture"]
+banner_recordNotExistDVPropertyCapture=xpath://div[text()=" RECORD DOES NOT EXIST, PLEASE TRY AGAIN "]
+txt_propertyIDDVPropertyCapture=xpath://input[@id="PROPID1"]
+txt_quantityDVPropertyCapture=xpath://input[@id="LNQTY1"]
+radioButton_inventoryDV=id:CI1
+button_savePropertyCaptureSummaryDV=xpath://button[text()="Save"]
+banner_inquirySuccessfulDVPropertyCapture=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+button_selectAcctCodesDV=xpath://span[text()="Select Acct Codes"]
+tableRow_selectAccountLinesDV=xpath://tbody[@role="rowgroup"]/tr[1]
+button_selectAccountingLineDV=xpath://span[text()="Select Accounting Line"]
+txt_amountPropertyCaptureDV=xpath://input[@id='AMT1']
+button_updateAcctInfoDV=xpath://span[text()="Update Acct Info"]
+button_nextPropertyCaptureDV=xpath://button[contains(text(),"Next")]
+
+**********************************DVPropertyCaptureSummary_Stop************************************
+
+**********************************Invoice_Start****************************************************
+
+#Invoice
+link_invoiceInquiryProcessing=xpath://a[text()="Invoice Inquiry/ Processing"]
+link_invoiceOverview=xpath://a[text()="Invoice Overview"]
+link_exceptionProcessingRetrieval=xpath://a[text()="Exception Processing Retrieval"]
+
+**********************************Invoice_Stop*****************************************************
+
+**********************************InvoiceInquiry/Processing_Start**********************************
+
+#InvoiceInquiry/Processing
+button_createNewInvoice=xpath://span[text()="+ Create New Invoice"]
+
+**********************************InvoiceInquiry/Processing_Stop***********************************
+
+**********************************InvoiceOverview_Start********************************************
+
+#InvoiceOverview
+button_addHeaderInformationInvoice=xpath://span[text()=" Add Header Information "]
+button_addDetailEntryInvoice=xpath://span[text()=" Add Detail Entry "]
+button_addPropertyCaptureInvoice=xpath://span[text()=" Add Property Capture "]
+button_submitInvoice=xpath://span[text()=" Submit "]
+button_exceptionProcessingInvoice=xpath://span[text()=" Go to Exception Processing "]
+banner_invoicePostedorAppr=xpath://div[text()=" INVOICE POSTED WITH ERROR STATUS DUE TO INVALID MATCH AT VOUCHER GENERATION "]
+label_invoiceStatus=xpath://div/span[contains(text(),"POST") and @class="status"]
+link_editPropertyCaptureInvoice=xpath://mat-card[3]/div/div[1]/div[2]/button/span/span[text()="Edit"]
+waitLabel_invoiceOverviewGeneralInfo=xpath://div[text()="General Information"]
+link_view/AddAttachmentsInvoice=xpath://span[text()=" file_present "]/following::u[text()="View/Add Attachments (0)"]
+getInvoiceNumberInvOverview=xpath://mat-card[1]//label[text()="Invoice Number"]//following::div[1][@class="label-data"]/span
+getPOIDInvoiceOverview=xpath://mat-card[1]//label[text()="Purchase Order Number"]//following::div[1][@class="label-data"]/span
+getInvoiceIDOverview=xpath://div[@class="title"]/span
+link_editHeaderEntryInvoiceOverview=xpath://mat-card[1]/div/div[1]/div[2]/button/span/span[text()="Edit"]
+banner_recordDeletedInvoice=xpath://div[contains(text()," RECORD DELETED ")]
+link_deleteInvoice=xpath://a/span[text()=" Delete"]
+button_confirmDeleteInvoice=xpath://button/span[text()="Delete"]
+
+**********************************InvoiceOverview_Stop*********************************************
+
+**********************************InvoiceHeaderEntry_Stop******************************************
+
+#InvoiceHeaderEntry
+txt_invoiceNumber=xpath://input[@id="IVCNUM"]
+txt_invoiceDate=xpath://input[@id="IVCDATE"]
+txt_purchaseOrderNumber=xpath://input[@id="PODOC"]
+txt_invoiceReceivedDate=xpath://input[@id="RECDATE"]
+button_nextInvoiceHeaderEntry=xpath://button[contains(text(),'Next')]
+radioButton_freightChargesInvoiceHeader=id:freightcharges
+txt_freightChargesInvoiceHeader=xpath://input[@id="FREIGHT"]
+dropDownClick_distributionMethodInvoiceHeader=xpath://mat-select[@id="DISMTH"]
+dropDownClick_appropriationYearInvoiceHeader=xpath://mat-select[@id="APYR1"]
+txt_indexInvoiceHeader=xpath://input[@id='INDEX1']
+txt_programCostAccountInvoiceHeader=xpath://input[@id='PCA1']
+txt_agencyObjectInvoiceHeader=xpath://input[@id='AOBJ1']
+banner_inquirySuccessfulInvoiceheaderEdit=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+radioButton_invoiceAllHeader=id:INVALL
+radioButton_interAgencyInvoiceHeader=id:INTAGY
+
+**********************************InvoiceHeaderEntry_Stop******************************************
+
+**********************************InvoiceSummary/QuickEntry_Start**********************************
+
+#InvoiceSummary/QuickEntry
+banner_invoiceQuickEntry=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+txt_quantityInvoiceQuickEntry=xpath://input[@id="LINQTY1"]
+txt_unitCostInvoiceQuickEntry=xpath://input[@id="UNCOST1"]
+button_nextInvoiceQuickEntry=xpath://button[contains(text(),"Next")]
+link_editDetailsInvoiceQuickEntry=xpath://a/span[text()="Edit Details"]
+link_viewDocumentInvoiceQuickEntry=xpath://a/u[text()="View Document"]
+getPOIDInvoiceQuickEntry=xpath://div[@class="row commodity-data-com"]//div[2]
+
+**********************************InvoiceSummary/QuickEntry_Stop***********************************
+
+**********************************ProgressPaymentInvoiceDetailEntry_Start*************************
+
+#ProgressPaymentInvoiceDetailEntry 
+txt_totalAmountInvolvedProgressPaymentInvoice=xpath://input[@id="TOTCOST"]
+button_nextProgressPaymentInvoice=xpath://button[contains(text(),"Next")]
+banner_noMoreDetailsProgressPaymentInvoice=xpath://div[contains(text()," NO MORE DETAIL LINES, DETAIL DATA ENTRY COMPLETE ")]
+label_totalRemainingPOProgressPaymentInvoice=xpath://div[text()=" Total Remaining on PO "]//following::div[@class="col-5 detail-data"]
+button_completedEntryProgressPaymentInvoice=xpath://button/span[text()=" Completed Entry "]
+button_yesToContinueProgressPaymentInvoice=xpath://button/span[text()="Yes" and @class="mat-button-wrapper"]
+
+**********************************ProgressPaymentInvoiceDetailEntry_Stop***************************
+
+**********************************InvoiceDetailEntry_Start*****************************************
+
+#InvoiceDetailEntry 
+txt_quantityInvolvedInvoiceDetailEntry=xpath://input[@id="QTYORD"]
+txt_unitCostInvoiceDetailEntry=xpath://input[@id="PURCOST"]
+getQuantityRemainingInvoiceDetailEntry=xpath://div[text()=" Quantity Remaining "]//following::div[@class="col-5 detail-data"][1]
+getUnitCostPOInvoiceDetailEntry=xpath://div[text()=" PO Unit Cost "]//following::div[@class="col-5 detail-data"][2]
+banner_noMoreDetailsInvoiceDetailEntry=xpath://div[contains(text()," NO MORE DETAIL LINES, DETAIL DATA ENTRY COMPLETE ")]
+button_completedEntryProgressPaymentInvoice=xpath://button/span[text()=" Completed Entry "]
+button_nextInvoiceDetailEntry=xpath://button[contains(text(),"Next")]
+banner_nextRecordDisplayedINV=xpath://div[text()=" NEXT RECORD DISPLAYED "]
+
+**********************************InvoiceDetailEntry_Stop******************************************
+
+**********************************InvoicePropertyCaptureSummaryScreen_Start************************
+
+#InvoicePropertyCaptureSummaryScreen
+banner_inquirySuccessfulINVPropertyCapture=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+button_selectCommodityInvoicePropertyCapture=xpath://div[@class="ng-star-inserted"]/mat-card
+button_createINVPropertyCapture=xpath://span[text()="Create Property Capture"]
+banner_inquirySuccessfulPropertyCaptureInv=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+txt_propertyIDPropertyCaptureINV=xpath://input[@id="PROPID1"]
+txt_quantityPropertyCaptureINV=xpath://input[@id="LNQTY1"]
+radioButton_inventoryINV=id:CI1
+button_savePropertyCaptureINV=xpath://button[contains(text(),"Save")]
+button_selectAcctCodesINV=xpath://span[text()="Select Acct Codes"]
+tableRow_selectAccountLinesINV=xpath://tbody[@role="rowgroup"]/tr[1]
+button_selectAccountingLineINV=xpath://span[text()="Select Accounting Line"]
+button_updateAcctInfoINV=xpath://span[text()="Update Acct Info"]
+button_nextPropertyCaptureINV=xpath://button[contains(text(),"Next")]
+banner_recordNotExistINVPropertyCapture=xpath://div[text()=" RECORD DOES NOT EXIST, PLEASE TRY AGAIN "]
+txt_amountPropertyCaptureINV=xpath://input[@id='AMT1']
+
+**********************************InvoicePropertyCaptureSummaryScreen_Stop*************************
+
+**********************************ExceptionProcessingInvoice_Start*********************************
+
+#ExceptionProcessingInvoice
+banner_inquirySuccessfulExpectionProcessingInv=xpath://div[text()=" INQUIRY SUCCESSFUL, TRANSACTION READY FOR UPDATE "]
+txt_exceptionQuantity=xpath://input[@id="EXCQTY"]
+txt_exceptionUnitCost=xpath://input[@id="EXCCOST"]
+getPOUnitCost=xpath://label[text()="PO UnitCost"]/following::label[@for="POCOST"]
+getQuantityRemaining=xpath://label[text()="Quantity Remaining"]/following::label[@for="QTYREM"]
+button_nextExceptionInvoice=xpath://button[contains(text(),"Next")]
+button_processExceptionInvoice=xpath://button[contains(text(),"Process")]
+banner_voucherGeneration=xpath://div[contains(text(),"SUCCESSFULLY GENERATED THROUGH EXCEPTION PROCESSING")]
+getPOIDInvoiceExecptionProcessing=xpath://label[@for="PODOC" and @class="lableValue"]
+banner_noMoreDetailsExceptionProcessingInv=xpath://div[contains(text()," NO MORE DETAIL LINES, DETAIL DATA ENTRY COMPLETE ")]
+getRemainingBalance=xpath://label[@for="remBalance" and @class="lableValue"]
+txt_expectionAmount=xpath://input[@id="exceptionAmount"]
+
+**********************************ExceptionProcessingInvoice_Stop**********************************
+
+**********************************ExceptionProcessingRetrieval_Start*******************************
+
+#ExceptionProcessingRetrieval
+txt_vendorInvoiceNumberExceptionRetrievalINV=xpath://label[@for="vendorsinvoicenumber"]//following::mat-form-field[1]//input[@id="lineNo"]
+txt_PurchaseOrderExceptionRetrievalINV=xpath://label[@for="PurchaseOrderNo"]//following::mat-form-field[1]//input[@id="lineNo"]
+txt_lineNumberExceptionRetrievalINV=xpath://label[@for="lineNo"]//following::mat-form-field[1]//input[@id="lineNo"]
+button_retrieveInvoiceExceptionRetrievalINV=xpath://button/span[text()="Retrieve Invoice"]
+
+**********************************ExceptionProcessingRetrieval_Stop********************************
+
+**********************************BlanketPurchaseOrder_Start***************************************
+
+#BlanketPurchaseOrder
+link_BPOInquiry/Processing=xpath://a[text()="Blanket Purchase Order Inquiry/ Processing"]
+link_BPOOverview=xpath://a[text()="Blanket Purchase Order Overview"]
+
+**********************************BlanketPurchaseOrder_Stop****************************************
+
+**********************************BPOInquiry/Processing_Start**************************************
+
+#BPOInquiry/Processing
+button_createNewBPO=xpath://span[text()="+ Create New BPO"]
+
+**********************************BPOInquiry/Processing_Stop***************************************
+
+**********************************BPOOverview_Start************************************************
+
+#BPOOverview
+button_addBPOWriting=xpath://span[text()="Add BPO Writing"]
+button_addBPODetailEntry=xpath://span[contains(text(),"Add BPO Detail Entry")]
+button_addBPOAditionalElements=xpath://span[contains(text(),"Add BPO Additional Elements")]
+button_addSecuritySettingsBPO=xpath://span[contains(text(),"Add Security Settings")]
+button_addViewVendorsBPO=xpath://span[contains(text(),"Add/View Vendors")]
+button_addRetainageInformationBPO=xpath://span[contains(text(),"Add Retainage Information")]
+button_addViewSubcontractorsBPO=xpath://span[contains(text(),"Add/View Subcontractors")]
+button_submitBPO=xpath://span[text()="Submit"]
+getBPOID=xpath://div[@class="title"]/span
+getBPOStatus=xpath://span[@class="status"]/span
+banner_BPOPosted=xpath://div[text()=" BLANKET PURCHASE ORDER POSTED "]
+banner_BPOPrinted=xpath://div[text()=" BLANKET PURCHASE ORDER PRINTED "]
+link_editBPOVendorsOverview=xpath://mat-card[5]/div/div/div[2]/button/span/span[text()="Edit"]
+link_editBPODetailEntryOverview=xpath://mat-card[2]/div/div/div[2]/button/span/span[text()="Edit"]
+link_editBPOAditionalElementsOverview=xpath://mat-card[3]/div/div/div[2]/button/span/span[text()="Edit"]
+link_editBPORetainageOverview=xpath://mat-card[6]/div/div/div[2]/button/span/span[text()="Edit"]
+link_editBPOSubcontractorEntryOverview=xpath://mat-card[7]/div/div/div[2]/button/span/span[text()="Edit"]
+link_copyBPO=xpath://div[text()="Copy"]
+banner_BPOCopied=xpath://div[contains(text(),"SUCCESSFULLY COPIED")]
+banner_newEmergencyBPO=xpath://div[text()=" PLEASE ENTER NEW EMERGENCY BPO NUMBER AND PRESS COPY AGAIN "]
+txt_BPOContractIDBPOOverview=xpath://input[@id="bpocontractid"]
+button_copyBPOOverview=xpath://button/span[text()="Copy"]
+link_deleteBPOOverview=xpath://div[text()="Delete"]
+button_confrimDeleteBPOOverview=xpath://button/span[text()="Delete"]
+banner_BPODeleted=xpath://div[text()=" BPO DELETED "]
+
+**********************************BPOOverview_Stop*************************************************
+
+**********************************BPOWriting_Start*************************************************
+
+#BPOWriting
+txt_expirationDateBPOWriting=xpath://input[@name="Expirationdate"]
+txt_contractStartDateBPOWriting=xpath://input[@name="Contractstart"]
+txt_contactNameBPOWriting=xpath://input[@name="ContactName"]
+txt_primaryVendorIDBPOWriting=xpath://input[@name="Vendor"]
+button_nextAddBPOWriting=xpath://button[contains(text(),"Next")]
+dropDownClick_purchasingTypeBPOWriting=xpath://mat-select[@id="POIND"]
+dropDownClick_interfaceTypeBPOWriting=xpath://mat-select[@id="IntfType"]
+txt_interfaceTypeBPOWriting=xpath://input[@id="INTTYPE"]
+txt_BPOContractIDBPOWriting=xpath://input[@id="PODOC"]
+radioButton_maximoBPOWriting=id:MXBPO
+
+**********************************BPOWriting_Stop**************************************************
+
+**********************************BPODetailEntry_Start*********************************************
+
+#BPODetailEntry
+txt_commodityIdBPO=xpath://input[@id="COMID1"]
+txt_contractAmountBPO=xpath://input[@name="ContractAmount"]
+txt_quantityBPO=xpath://input[@id="MAXQTY1"]
+txt_unitCostBPO=xpath://input[@id="UNCOST1"]
+txt_commodityIdBPO2=xpath://input[@id="COMID2"]
+txt_quantityBPO2=xpath://input[@id="MAXQTY2"]
+txt_unitCostBPO2=xpath://input[@id="UNCOST2"]
+button_nextaddBPODetailEntry=xpath://span[contains(text(),"Next")]
+button_addDetailEntryBPO=xpath://button/span[text()=" + ADD "]
+
+**********************************BPODetailEntry_Stop**********************************************
+
+**********************************BPOAdditionalElements_Start**************************************
+
+#BPOAdditionalElements
+dropDownClick_typeBPO=xpath://mat-select[@id="TYPE"]
+txt_contractAdministrator=xpath://input[@name="contract-administrator"]
+txt_procurementOfficerBPO=xpath://input[@name="procurement-officer"]
+dropDownClick_procurementMethod1BPO=xpath://mat-select[@id="METH1"]
+dropDownClick_categoryOfWorkBPO=xpath://mat-select[@id="CATG"]
+radioButton_nonVisualAccessBPO=id:NVISUAL
+radioButton_hiringServicesBPO=id:HIRING
+dropDownClick_awardAuthorityBPO=xpath://mat-select[@id="AUTH"]
+txt_awardDateBPO=xpath://input[@name="awarddate"]
+radioButton_MBEWaiverBPO=id:MBEWAI
+radioButton_veteranWaiverBPO=id:VETWAI
+txt_rStarsDescriptionBPO=xpath://textarea[@name="description"]
+txt_totalBidsBPO=xpath://input[@name="total-solicitations"]
+txt_smallBusinessBidsBPO=xpath://input[@name="smallbusiness-bids"]
+txt_MBEBidsBPO=xpath://input[@name="mbe-bids"]
+button_saveAndReturnBPOAdditionalElements=xpath://button[contains(text()," Save & Return ")]
+banner_saveAndExistBPO=xpath://div[@class="errorboxY ng-star-inserted"]
+
+**********************************BPOAdditionalElements_Stop***************************************
+
+**********************************BPOSecuritySettings_Start****************************************
+
+#BPOSecuritySettings
+txt_departmentIDSecurityBPO=xpath://input[@id="DEPT1"]
+checkBox_departmentAllAccessBPO=xpath://label[@class="mat-slide-toggle-label"]
+txt_callAuthorizationAmountBPO=xpath://input[@id="CAUTH10"]
+button_saveAndReturnAddSecuritySettingsBPO=xpath://button[text()="Save and Return"]
+
+**********************************BPOSecuritySettings_Stop*****************************************
+
+**********************************BPORetainageInformation_Start************************************
+
+#BPORetainageInformation
+txt_retainageAmountBPO=xpath://input[@name="Retainageamount"]
+button_nextRetainageInformationBPO=xpath://button[contains(text(),"Next")]
+toggleSwitch_retainageTypeBPO=xpath://input[@id="RETTYP-input"]
+radioButton_escrowRetainageBPO=id:ESCIND
+txt_retainagePercentageBPO=xpath://input[@id="RETPCT"]
+txt_vendorIDRetainageBPO=xpath://input[@id="AGENT"]
+txt_vendorMailCodeRetainageBPO=xpath://input[@id="ADDCODE"]
+
+**********************************BPORetainageInformation_Stop*************************************
+
+**********************************BPOSubcontractorEntry_Start**************************************
+
+#BPOSubcontractorEntry
+txt_vendorIdSubcontractorEntryBPO=xpath://input[@id="VENDNO1"]
+txt_subcontractorAmountSubcontractorEntryBPO=xpath://input[@id="SUBAMT1"]
+button_saveAndReturnSubcontractorEntryBPO=xpath://span[text()="Save and Return "]
+
+**********************************BPOSubcontractorEntry_Stop***************************************
+
+**********************************BPOVendors_Start*************************************************
+
+#BPOVendors
+button_addVendorsBPO=xpath://button/span[text()=" Add "]
+txt_vendorIDVendorsBPO=xpath://input[@id="VENDNO2"]
+button_saveAndReturnVendorsBPO=xpath://button/span[text()=" Save and Return "]
+
+**********************************BPOVendors_Stop**************************************************
+
+**********************************Voucher_Start****************************************************
+
+#Voucher
+link_voucherInquiryProcessing=xpath://a[text()="Voucher Inquiry/ Processing"]
+
+**********************************Voucher_Stop*****************************************************
+
+**********************************VoucherInquiryProcessing_Start***********************************
+
+#VoucherInquiryProcessing
+dropDownClick_searchCriteriaVoucher=xpath://mat-select[@name="poSelect"]
+txt_typeInPOId=xpath://input[@name="inputtext"]
+link_searchPOID=xpath://span[text()="Search"]
+banner_inquirySuccessfulVoucherInquiry=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+link_viewDocVoucherInquiry=xpath://span[contains(text(),"View Doc >")]
+
+**********************************VoucherInquiryProcessing_Stop************************************
+
+**********************************VoucherOverview_Start********************************************
+
+#VoucherOverview
+button_completeVoucherEntry=xpath://span[contains(text(),"Complete Voucher Header")]
+button_submitVoucher=xpath://span[text()=" Submit "]
+wait_voucherOverviewLoad=xpath://div[text()="General Information"]
+banner_overrideMessage=xpath://div[text()=" NO FIXED ASSET LINES SELECTED, PRESS NEXT TO OVERRIDE "]
+banner_voucherStatus=xpath://div/span[text()="Status: POST "]
+link_view/AddAttachmentsVoucher=xpath://span[text()="file_present"]/following::u[text()="View/Add Attachments(0)"]
+link_editVoucherHeaderEntry=xpath://mat-card[1]/div/div/div[2]/button/span/span[text()="Edit"]
+getvoucherID=xpath://div[text()=" Voucher ID# "]/span
+banner_voucherPosted=xpath://div[contains(text(),"VOUCHER POSTED")]
+link_editPropertyCaptureVoucherOverview=xpath://mat-card[4]/div/div/div[2]/button/span/span[text()="Edit"]
+link_deleteVoucherOverview=xpath://div[text()="Delete"]
+button_confirmDeleteVoucherDelete=xpath://button/span[text()="Delete"]
+banner_voucherDeleted=xpath://div[text()=" VOUCHER DELETED "]
+
+**********************************VoucherOverview_Stop*********************************************
+
+**********************************VoucherHeaderEntry_Start*****************************************
+
+#VoucherHeaderEntry
+banner_inquirySuccessfulVoucherHeadEntry=xpath://div[text()=" INQUIRY SUCCESSFUL, TRANSACTION READY FOR UPDATE "]
+radiobutton_finalVoucherHeaderEntry=id:PARTFIN
+dropDownClick_interfaceTypeVoucherHeader=xpath://mat-select[@id="INTTYPE"]
+txt_interfaceTypeVoucherHeader=xpath://input[@id="IntfOther"]
+button_nextVoucherHeaderEntry=xpath://button[@type="submit"]
+txt_invoiceDescriptionHeaderEntry=xpath://textarea[@id="MSGLINE"]
+banner_voucherCannotBePost=xpath://div[text()=" PO/CONTRACT IS CLOSED, VOUCHER CANNOT BE POSTED "]
+button_cancelVoucherHeaderEntry=xpath://div[contains(text(),"Cancel")]
+button_yesToCancelVoucherHeaderEntry=xpath://span[contains(text(),"Yes")]
+
+**********************************VoucherHeaderEntry_Stop******************************************
+
+**********************************VoucherPropertyCapture_Start*************************************
+
+#VoucherPropertyCapture
+banner_inquirySuccessfulVoucherPropertyCapture=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+button_selectCommodityVoucherPropertyCapture=xpath://div[@class="ng-star-inserted"]/mat-card
+button_createVoucherPropertyCapture=xpath://span[text()="Create Property Capture"]
+banner_inquirySuccessfulPropertyCaptureVoucher=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+txt_propertyIDPropertyCaptureVoucher=xpath://input[@id="PROPID1"]
+txt_quantityPropertyCaptureVoucher=xpath://input[@id="LNQTY1"]
+radioButton_inventoryVoucher=id:CI1
+button_savePropertyCaptureVoucher=xpath://button[contains(text(),"Save")]
+button_selectAcctCodesVoucher=xpath://span[text()="Select Acct Codes"]
+tableRow_selectAccountLinesVoucher=xpath://tbody[@role="rowgroup"]/tr[1]
+button_selectAccountingLineVoucher=xpath://span[text()="Select Accounting Line"]
+button_updateAcctInfoVoucher=xpath://span[text()="Update Acct Info"]
+button_nextPropertyCaptureVoucher=xpath://button[contains(text(),"Next")]
+banner_recordNotExistVoucherPropertyCapture=xpath://div[text()=" RECORD DOES NOT EXIST, PLEASE TRY AGAIN "]
+txt_amountPropertyCaptureVoucher=xpath://input[@id='AMT1']
+button_addPropertyCaptureVoucher=xpath://button/span[text()="Add Property Capture"]
+txt_propertyIDPropertyCaptureVoucher2=xpath://input[@id="PROPID2"]
+txt_quantityPropertyCaptureVoucher2=xpath://input[@id="LNQTY2"]
+radioButton_inventoryVoucher2=id:CI2
+button_savePropertyCaptureVoucher2=xpath://div/span[text()="02 Property Capture Information"]/following::button[text()="Save"]
+button_selectAcctCodesVoucher2=xpath://div/span[text()="02 Property Capture Information"]/following::span[text()="Select Acct Codes"]
+link_deleteVoucherPropertyCapture2=xpath://div/span[text()="02 Property Capture Information"]/following::span[text()=" Delete"]
+button_confirmDeleteVoucherPropertyCapture=xpath://button/span[text()="Delete"]
+
+**********************************VoucherPropertyCapture_Stop**************************************
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**********************************DirectPurchaseOrder_Start****************************************
+
+#DirectPurchaseOrder
+link_DPOInquiryProcessing=xpath://a[contains(text(),"Direct Purchase Order Inquiry/ Processing")]
+link_DPOOverview=xpath://a[text()="Direct Purchase Order Overview"]
+
+**********************************DirectPurchaseOrder_Stop*****************************************
+
+**********************************DPOInquiry/Processing_Start**************************************
+
+#DPOInquiry/Processing
+button_createNewDPO=xpath://span[text()="+ Create New Direct Purchase Order"]
+
+**********************************DPOInquiry/Processing_Stop***************************************
+
+**********************************DPOOverview_Start************************************************
+
+#DPOOverview
+button_addDPOWriting=xpath://span[text()="Add DPO Writing"]
+button_addDPOdetailEntry=xpath://span[text()="Add DPO Detail Entry"]
+button_addDPOAdditionalElementsDPO=xpath://span[contains(text(),'Add PO Additional Elements')]
+button_addViewSubcontractorsDPO=xpath://span[contains(text(),'Add/View Subcontractors')]
+button_submitDPO=xpath://span[text()="Submit"]
+getDPOID=xpath://div[@class="title"]/span
+link_viewAddAttachmentsDPO=xpath://span[text()=" file_present "]/following::u[text()="View/Add Attachments (0)"]
+link_editDPOWriting=xpath://mat-card[1]/div/div[1]/div[2]/button/span[1]/span
+link_editDPODetail=xpath://mat-card[2]/div/div[1]/div[2]/button/span[1]/span
+link_editDPOAdditionalElements=xpath://mat-card[4]/div/div[1]/div[2]/button/span[1]/span
+link_editDPOSubcontractorEntry=xpath://mat-card[5]/div/div[1]/div[2]/button/span[1]/span
+buttonPresent_submitDPO=xpath://div[@class="col-3 ng-star-inserted"]
+banner_accountingInfoPresent=xpath://div[text()=" Accounting Information "]
+banner_DPOPosted=xpath://div[text()=" RECORD POSTED "]
+banner_DPOPrinted=xpath://div[text()=" PURCHASE ORDER PRINTED "]
+getData_statusPostDPO=xpath://span[text()='POST']
+link_deleteDPO=xpath://div[text()="Delete"]
+link_confirmDelete=xpath://span[text()="Delete"]
+banner_DPODeleted=xpath://div[text()=" DIRECT PURCHASE ORDER DELETED "]
+banner_editErrorRStarsDPO=xpath://div[text()=" EDIT ERRORS IN R*STARS, CLICK 'VIEW ERROR' ON ACCOUNTING INFORMATION TO VIEW ERRORS "]
+link_viewErrorDPO=xpath://span[text()="View Error >"]
+link_copyDPO=xpath://div[text()="Copy"]
+
+**********************************DPOOverview_Stop*************************************************
+
+**********************************DPOWriting_Start*************************************************
+
+#DPOWriting
+dropDownClick_interfaceTypeDPO=xpath://mat-select[@id='INTTYPE']
+txt_departmentIDDPO=xpath://input[@id='DEPT']
+txt_interfaceTypeOtherDPO=xpath://input[@id='IntfOther']
+dropDownClick_purchasingTypeDPO=xpath://mat-select[@id='POIND']
+dropDownClick_matchTypeDPO=xpath://mat-select[@id='MTHTYPE']
+txt_BlanketPurchaseOrderIDDPO=xpath://input[@id='BPDOC']
+txt_vendorIdDPO=xpath://input[@name="Vendor"]
+link_searchBPOVendorsDPO=xpath://div[text()=" Search BPO Vendors "]
+txt_vendorMailCodeDPO=xpath://input[@id='ADDCODE']
+txt_buyerCodeDPO=xpath://input[@id='BUYER']
+link_addNoteDPO=xpath://div[text()='Add Note']
+txt_noteDPO=xpath://textarea[@id='InputNote']
+link_saveNoteDPO=xpath://div[text()='Save Note']
+link_viewAddTerms=xpath://div[text()="View/Add Terms"]
+link_deliveryInformationSearchAddressCodesDPO=xpath:(//div[text()='Search Address Codes'])[1]
+link_billingInformationSearchAddressCodesDPO=xpath:(//div[text()='Search Address Codes'])[2]
+txt_deliveryDateDPO=xpath://input[@name="DueDate"]
+dropDownClick_distributionMethodDPO=xpath://mat-select[@id='DISTIND']
+radioButton_expandedAccountingDPO=xpath://mat-radio-group[@name='expandAccounting']//input[@value='true']
+dropDownClick_agencyDPO=xpath://mat-select[@id='AGY1']
+dropDownClick_appropriationYearDPO=xpath://mat-select[@id='APYR1']
+txt_indexDPO=xpath://input[@id='INDEX1']
+txt_programCostAccountDPO=xpath://input[@id='PCA1']
+txt_objectDPO=xpath://input[@id='OBJ1']
+txt_agencyObjectDPO=xpath://input[@id='AOBJ1']
+txt_grantPhaseNumberDPO=xpath://input[@id='GRTPH1']
+txt_projectPhaseNumberDPO=xpath://input[@id='PRJPH1']
+txt_AgencyCode1DPO=xpath://input[@id='AG1AG1231']
+txt_AgencyCode2DPO=xpath://input[@id='AG2AG1231']
+txt_AgencyCode3DPO=xpath://input[@id='AG3AG1231']
+txt_percentageDPO=xpath://input[@id='AMT1']
+txt_subGranteeDPOExp=xpath://input[@id='SUBGR1']
+txt_bankNumberDPOExp=xpath://input[@id='BANKNO1']
+txt_recurringTransactionIndicatorDPOExp=xpath://input[@id='RTI1']
+txt_capitalizedIndicatorDPOExp=xpath://input[@id='CAP1']
+txt_propertyNumberDPOExp=xpath://input[@id='PROPNO1']
+txt_multiPurposeCodeDPOExp=xpath://input[@id='MPCODE1']
+button_nextDPOWriting=xpath://button[contains(text(),'Next')]
+
+
+**********************************DPOWriting_Stop**************************************************
+
+**********************************DPOSearchAddressCode_Start***************************************
+
+#DPOSearchAddressCode
+txt_AddressCodeDPO=xpath://div[2]/input[@aria-required='false']
+link_SearchAddressCodeDPO=xpath://span[text()='search']
+select_firstRowSearchAddressCodeDPO=xpath:(//tbody)/tr[1]
+button_SelectAddressCodeDPO=xpath://span[text()=" Select Address Code "]
+
+**********************************DPOSearchAddressCode_Stop****************************************
+
+**********************************DPODetailSummary_Start*******************************************
+
+#DPODetailSummary
+button_addCommodityDPO=xpath://span[contains(text()," Add Commodity ")]
+card_commodityAddedDPO=xpath://div[@class="selectionContainer"]
+link_viewSpecTermsDPODetailSummary=xpath:(//span[text()="View Specs/Terms"])[1]
+link_editDPODetailSummaryCommodity1=xpath:(//a[@id='edit'])[1]
+button_nextDPODetailSummary=xpath://span[contains(text(),'Next')]
+
+**********************************DPODetailSummary_Stop********************************************
+
+**********************************DPODetailEntry_Start*********************************************
+
+#DPODetailEntry
+txt_commodityIDDPO=xpath://input[@name="commodityId"]
+link_selectBPOCommodityDPO=xpath://div[text()="Select BPO Commodity"]
+txt_quantityDPO=xpath://input[@name="quantity"]
+txt_unitCostDPO=xpath://input[@id='UNCOSTA']
+dropDownClick_agency1DPODetail=xpath://mat-select[@id='AGY1']
+dropDownClick_appropriationYear1DPODetail=xpath://mat-select[@id='APYR1']
+txt_index1DPODetail=xpath://input[@id='INDEX1']
+txt_programCostAccount1DPODetail=xpath://input[@id='PCA1']
+txt_object1DPODetail=xpath://input[@id='OBJ1']
+txt_agencyObject1DPODetail=xpath://input[@id='AOBJ1']
+txt_grantPhaseNumber1DPODetail=xpath://input[@id='GRTPH1']
+txt_projectPhaseNumber1DPODetail=xpath://input[@id='PRJPH1']
+txt_AgencyCode1DPODetail=xpath://input[@id='AG1AG1231']
+txt_AgencyCode2DPODetail=xpath://input[@id='AG2AG1231']
+txt_AgencyCode3DPODetail=xpath://input[@id='AG3AG1231']
+txt_amount1DPODetail=xpath://input[@id='AMT1']
+label_estimatedTotalCostDPODetail=xpath://div[@id='cost']
+banner_commoditySaveAndReturnDPO=xpath://div[text()=" COMMODITY ON A BPO, REPEAT LAST ACTION AGAIN TO CONFIRM SAVE "]
+button_saveAndReturnDPODetailEntry=xpath://span[contains(text()," Save and Return ")]
+
+**********************************DPODetailEntry_Stop**********************************************
+
+**********************************DPOAdditionalElements_Start**************************************
+
+#DPOAdditionalElements
+radioButton_federalExemptDPO=id:FDEXMP
+radioButton_smallBusinessReserveProcurementDPO=id:SBRPRC
+txt_locationDPO=xpath://input[@id='LOCCODE']
+dropDownClick_procurementMethod1DPO=xpath://mat-select[@id='METH1']
+dropDownClick_procurementMethod2DPO=xpath://mat-select[@id='METH2']
+dropDownClick_procurementMethod3DPO=xpath://mat-select[@id='METH3']
+dropDownClick_categoryOfWorkDPO=xpath://mat-select[@id='CATG']
+radioButton_nonVisualAccessDPO=id:NVISUAL
+radioButton_hiringServicesDPO=id:HIRING
+dropdownClick_awardAuthorityDPO=xpath://mat-select[@id='AWARD']
+radioButton_MBEWaiverDPO=id:MBEWAI
+radioButton_veteranWaiverDPO=id:VETWAI
+txt_MBEWaiverPercentDPO=xpath://input[@id='MBEPCT']
+txt_veteranWaiverPercentDPO=xpath://input[@id='VETPCT']
+txt_MBEGoalPercentDPO=xpath://input[@id='MBEGOAL']
+txt_veteranGoalPercentDPO=xpath://input[@id='VETGOAL']
+txt_MBECommitDPO=xpath://input[@id='MBECMT']
+txt_veteranCommitDPO=xpath://input[@id='VETCMT']
+txt_prePercentDPO=xpath://input[@id='PRECYC']
+txt_postPercentDPO=xpath://input[@id='POSTCYC']
+txt_totalSoliciationsDPO=xpath://input[@id='SOLTOT']
+txt_smallBusinessSoliciationDPO=xpath://input[@id='SOLSB']
+txt_MBESoliciationsDPO=xpath://input[@id='SOLMBE']
+txt_totalBidsDPO=xpath://input[@name="total-bids"]
+txt_smallBusinessBidsDPO=xpath://input[@name="small-business-bids"]
+txt_MBEBidsDPO=xpath://input[@name="mbe-bids"]
+button_saveAndReturnDPOAdditionalElements=xpath://button[text()=" Save & Return "]
+
+**********************************DPOAdditionalElements_Stop***************************************
+
+**********************************DPOSubContractorEntry_Start**************************************
+
+#DPOSubContractorEntry
+txt_vendorIdSubcontractorDPO=xpath://input[@id="VENDNO1"]
+txt_subContractorNameDPO=xpath://input[@id='SUBNM1']
+txt_subContractorIDDPO=xpath://input[@id='SUBID1']
+txt_subcontractorAmountDPO=xpath://input[@id="SUBAMT1"]
+button_saveAndReturnSubcontractorDPO=xpath://span[text()="Save and Return "]
+
+**********************************DPOSubContractorEntry_Stop***************************************
+
+**********************************ErrorMessagesAccounting_Start************************************
+
+#ErrorMessagesAccounting
+firstRow_ErrorMessageAccounting=xpath:(//table/tbody[@role='rowgroup'])[3]/tr[1]
+link_closeErrorMessagesAccounting=xpath://mat-icon[text()="close"]
+
+**********************************ErrorMessagesAccounting_Stop*************************************
+
+**********************************View/AddTerms_Start**********************************************
+
+#View/AddTerms
+txt_termInformation1Terms=xpath:(//input[@name='blockData'])[1]
+dropDownClick_blockFunctionTerms=xpath://div[@class='block']//mat-select[1]
+button_ExecuteTerms=xpath://span[text()=" Execute"]
+banner_blockInsertedTerms=xpath://div[text()=" BLOCK INSERTED "]
+button_saveTerms=xpath://span[text()=" Save "]
+banner_recordReplacedTerms=xpath://div[text()=" RECORD REPLACED "]
+dropDownClick_lineNumberTerms=xpath://div[@class='block content-wrapper']//mat-select[1]
+button_AddTermsTerms=xpath://span[text()=" Add Term(s) "]
+txt_termID1Terms=xpath:(//input[@id='Id'])[last()]
+link_closeTerms=xpath://mat-icon[text()="close"]
+
+**********************************View/Add Terms_Stop**********************************************
+
+**********************************ViewSpecs/Terms_Start********************************************
+
+#ViewSpecs/Terms
+txt_specificationInformation1Spec=xpath:(//input[@name='blockData'])[1]
+dropDownClick_blockFunctionSpec=xpath://mat-select[@placeholder="Select One"]
+button_ExecuteSpec=xpath://span[text()=" Execute"]
+banner_blockInsertedSpec=xpath://div[text()=" BLOCK INSERTED "]
+button_addSpecificationSpec=xpath://span[text()=" Add Specification(s) "]
+txt_specIDSpec=xpath:(//input[@id='Id'])[last()]
+button_saveSpec=xpath://span[text()=" Save "]
+banner_recordReplacedSpec=xpath://div[text()=" RECORD REPLACED "]
+link_closeSpec=xpath://mat-icon[text()="close"]
+
+**********************************ViewSpecs/Terms_Stop*********************************************
+
+**********************************PurchaseOrder_Start**********************************************
+
+#PurchaseOrder
+link_purchaseOrderInquiryProcessing=xpath://a[text()="Purchase Order Inquiry/ Processing"]
+link_purchaseOrderOverview=xpath://a[text()="Purchase Order Overview"]
+
+**********************************PurchaseOrder_Stop***********************************************
+
+**********************************PurchaseOrderProcessing_Start************************************
+
+#PurchaseOrderInquiryProcessing
+button_createNewPO=xpath://span[text()="+ Create New Purchase Order"]
+
+**********************************PurchaseOrderProcessing_Stop*************************************
+
+**********************************PurchaseOrderOverview_Start**************************************
+
+#PurchaseOrderOverview
+heading_PurchaseOrderOverview=xpath://div[contains(text(),"Purchase Order Overview")]
+button_addPOWriting=xpath://span[text()="Add PO Writing"]
+button_addPOAdditionalElements=xpath://span[text()="Add PO Additional Elements"]
+button_addViewSubcontractorsPO=xpath://span[text()="Add/View Subcontractors"]/ancestor::button
+link_viewAddAttachmentsPO=xpath://span[text()=" file_present "]/following::u[text()="View/Add Attachments (0)"]
+getPurchaseOrderId=xpath://div[text()=" PO ID# "]/child::span
+link_editPOWriting=xpath://mat-card[1]/div/div/div[2]/button/span/span[text()="Edit"]
+link_editPOAdditionalElements=xpath://div/mat-card[4]/div/div[1]/div[2]/button/span[1]/span
+link_editPOSubContractorEntry=xpath://div/mat-card[5]/div/div[1]/div[2]/button/span[1]/span
+button_submitPurchaseOrder=xpath://span[text()="Submit"]/ancestor::button
+getData_statusPostPurchaseOrder=xpath://span[text()='POST']
+banner_purchaseOrderPostedOrAppr=xpath://div[text()=" RECORD POSTED "]
+link_purchaseOrderPrintIcon=xpath://mat-icon[text()='print']
+banner_purchaseOrderPrinted=xpath://div[text()=" PURCHASE ORDER PRINTED "]
+label_displayExpandedAccountingPO=xpath://label[text()="Display Expanded Accounting"]
+label_commodity1InformationPO=xpath://mat-card[2]/div/div[3]/div[2]/div
+label_Accounting1InformationPO=xpath:(//tbody/tr[@class='mat-row cdk-row ng-star-inserted'])[1]
+link_deletePO=xpath://div[text()="Delete"]
+link_confirmDeletePO=xpath://span[text()="Delete"]
+banner_PODeleted=xpath://div[text()=" PURCHASE ORDER DELETED "]
+
+**********************************PurchaseOrderOverview_Stop***************************************
+
+**********************************PurchaseOrderWriting_Start***************************************
+
+#PurchaseOrderWriting
+txt_requisitionIdPO=xpath://input[@name="requisitionId"]
+dropDownClick_matchTypePO=xpath://mat-select[@id='MTHTYPE']
+dropDownClick_interfaceTypePO=xpath://mat-select[@id='INTTYPE']
+txt_othersInterfaceTypePO=xpath://input[@id='INTTYPE']
+link_buyerCodePO=xpath://div[text()=" Search Buyer Codes "]
+txt_typeBuyerCodePO=xpath://input[@placeholder="Type in a Buyer Code or Buyer Name"]
+link_searchBuyerCodePO=xpath://span[text()="search"]
+tablerow_buyerCodeSelectionPO=xpath://tbody[@role="rowgroup"]/child::tr[1]
+button_selectBuyerCodePO=xpath://span[text()=" Select Buyer Code "]
+txt_departmentIDPO=xpath://input[@id='DEPT']
+txt_vendorIdPO=xpath://input[@name="vendorId"]
+#link_searchVendorsPO=xpath://div[text()=" Search Vendors "]
+#txt_typeVendorNamePO=xpath://input[@placeholder="  Type in a Vendor Name"]
+#tableRow_vendorSearchResultsPO=xpath://tbody[@role="rowgroup"]/child::tr[1]
+txt_deliveryToNamePO=xpath://input[@name="deliveryToName"]
+txt_deliveryDatePO=xpath://input[@name="deliveryDate"]
+txt_expirationDatePO=xpath://input[@id='EXPDATE']
+button_nextPurchaseOrderWritingPO=xpath://button[contains(text(),"Next")]
+txt_deliverToNamePOWriting=xpath://input[@name="deliveryToName"]
+link_printIconPOWriting=xpath://mat-icon[text()="print"]
+banner_POPrintedPOWriting=xpath://div[text()=" PURCHASE ORDER PRINTED "]
+link_viewAddTermsPO=xpath://div[text()=" View/Add Terms "]
+
+**********************************PurchaseOrderWriting_Stop****************************************
+
+**********************************PurchaseOrderAdditionalElements_Start****************************
+
+#PurchaseOrderAdditionalElements
+radioButton_federalExemptPO=id:FDEXMP
+radioButton_smallBusinessReserveProcurementPO=id:SBRPRC
+txt_locationPO=xpath://input[@id='LOCCODE']
+dropDownClick_procurementMethod1PO=xpath://mat-select[@id='METH1']
+dropDownClick_procurementMethod2PO=xpath://mat-select[@id='METH2']
+dropDownClick_procurementMethod3PO=xpath://mat-select[@id='METH3']
+dropDownClick_categoryOfWorkPO=xpath://mat-select[@id='CATG']
+radioButton_nonVisualAccessPO=id:NVISUAL
+radioButton_hiringServicesPO=id:HIRING
+dropdownClick_awardAuthorityPO=xpath://mat-select[@id='AWARD']
+radioButton_MBEWaiverPO=id:MBEWAI
+radioButton_veteranWaiverPO=id:VETWAI
+txt_MBEWaiverPercentPO=xpath://input[@id='MBEPCT']
+txt_veteranWaiverPercentPO=xpath://input[@id='VETPCT']
+txt_MBEGoalPercentPO=xpath://input[@id='MBEGOAL']
+txt_veteranGoalPercentPO=xpath://input[@id='VETGOAL']
+txt_MBECommitPO=xpath://input[@id='MBECMT']
+txt_veteranCommitPO=xpath://input[@id='VETCMT']
+txt_prePercentPO=xpath://input[@id='PRECYC']
+txt_postPercentPO=xpath://input[@id='POSTCYC']
+txt_totalSoliciationsPO=xpath://input[@id='SOLTOT']
+txt_smallBusinessSoliciationPO=xpath://input[@id='SOLSB']
+txt_MBESoliciationsPO=xpath://input[@id='SOLMBE']
+txt_totalBidsPO=xpath://input[@name="total-bids"]
+txt_smallBusinessBidsPO=xpath://input[@name="small-business-bids"]
+txt_MBEBidsPO=xpath://input[@name="mbe-bids"]
+button_saveAndReturnPOAdditionalElements=xpath://button[text()=" Save & Return "]
+
+**********************************PurchaseOrderAdditionalElements_Stop*****************************
+
+**********************************PurchaseOrderSubContractorEntry_Start****************************
+
+#PurchaseOrderSubcontractorEntry
+txt_vendorIdSubcontractorPO=xpath://input[@id="VENDNO1"]
+txt_subContractorNamePO=xpath://input[@id='SUBNM1']
+txt_subContractorIDPOPO=xpath://input[@id='SUBID1']
+txt_subcontractorAmountPO=xpath://input[@id="SUBAMT1"]
+button_saveAndReturnSubcontractorEntryPO=xpath://button[@type="submit"]/child::span[text()="Save and Return "]
+
+**********************************PurchaseOrderSubContractorEntry_Stop*****************************
+
+**********************************ChangeOrderProcessing_Start**************************************
+
+#ChangeOrderProcessingTab
+link_requisitionChangeMenu=xpath://a[text()="Requisition Change Menu"]
+link_POBPOITBChangeMenu=xpath://a[text()="PO - BPO - ITB Change Menu"]
+link_SpecificationTermChangeCOProcessingTab=xpath://a[text()="Specification/Terms Change"]
+link_documentCancellation=xpath://a[text()="Document Cancellation"]
+
+**********************************ChangeOrderProcessing_Stop***************************************
+
+**********************************RequisitionChangeMenu_Start**************************************
+
+#RequisitionChangeMenu
+link_accountingChangeReq=xpath://a[text()="Accounting Change"]
+link_commodityChangeReq=xpath://a[text()="Commodity Change"]
+link_commodityAddReq=xpath://a[text()="Commodity Add"]
+link_requisitionChangeOrderInquiry=xpath://a[text()="Requisition Change Order Inquiry"]
+
+**********************************RequisitionChangeMenu_Stop***************************************
+
+**********************************RequisitionAccountingChangeBeforeCOID_Start**********************
+
+#RequisitionAccountingChangeBeforeCOIDGenerated
+txt_requisitionIDBeforeCOReqAcc=xpath://input[@id='RQDOC']
+txt_lineNumberBeforeCOReqAcc=xpath://input[@id='LINENO']
+txt_documentREferenceBeforeCOReqAcc=xpath://input[@id='DOCREF']
+button_initiateCOBeforeCOReqAcc=xpath://button[text()="Initiate Change Order"]
+
+**********************************RequisitionAccountingChangeBeforeCOID_Stop***********************
+
+**********************************RequisitionAccountingChangeAfterCOID_Start***********************
+
+#RequisitionAccountingChangeAfterCOIDGenerated
+banner_inquirySuccessfulReqAcc=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+getRequisitionAccountingChangeID=xpath://div[text()="Change Order ID# "]/child::span
+button_newAccountingLineReqAcc=xpath://tbody/tr[2]
+button_saveAccountingChangesReqAcc=xpath://button[text()=" Save Accounting Changes "]
+dropDownClick_AgencyReqAcc=xpath://mat-select[@id='AGY1']
+dropDownClick_appropriationYearReqAcc=xpath://mat-select[@id='APYR1']
+txt_indexReqAcc=xpath://input[@id='INDEX1']
+txt_programCostAccountReqAcc=xpath://input[@id='PCA1']
+txt_objectReqAcc=xpath://input[@id='OBJ1']
+txt_agencyObjectReqAcc=xpath://input[@id='AOBJ1']
+txt_grantPhaseNumberReqAcc=xpath://input[@id='GRTPH1']
+txt_projectPhaseNumberReqAcc=xpath://input[@id='PRJPH1']
+txt_AgencyCode1ReqAcc=xpath://input[@id='AG1AG1231']
+txt_AgencyCode2ReqAcc=xpath://input[@id='AG2AG1231']
+txt_AgencyCode3ReqAcc=xpath://input[@id='AG3AG1231']
+button_saveReqAcc=xpath://button[text()=" Save "]
+banner_recordSavedReqAcc=xpath://div[text()=" RECORD SAVED "]
+banner_recordReplacedReqAcc=xpath://div[text()=" RECORD ALREADY EXISTS ON FILE, IT WAS REPLACED "]
+button_submitReqAcc=xpath://button[text()=" Submit "]
+banner_COPostedReqAcc=xpath://div[text()=" CHANGE ORDER POSTED "]
+link_deleteReqAcc=xpath://span[text()=" Delete"]
+link_confirmDeleteReqAcc=xpath://span[text()="Delete"]
+banner_CODeletedReqAcc=xpath://div[text()=" CHANGE ORDER DELETED "]
+
+**********************************RequisitionAccountingChangeAfterCOID_Stop************************
+
+**********************************RequisitionCommodityChangeBeforeCOID_Start***********************
+
+#RequisitionCommodityChangeBeforeCOIDGenerated
+txt_requisitionIDBeforeCOReqCommChange=xpath://input[@id='RQDOC']
+txt_lineNumberBeforeCOReqCommChange=xpath://input[@id='LINENO']
+txt_documentReferenceBeforeCOReqCommChange=xpath://input[@id='DOCREF']
+button_initiateCOBeforeCOReqCommChange=xpath://button[text()="Initiate Change Order"]
+
+**********************************RequisitionCommodityChangeBeforeCOID_Stop************************
+
+**********************************RequisitionCommodityChangeAfterCOID_Start************************
+
+#RequisitionCommodityChangeAfterCOIDGenerated
+banner_CODisplayedReadyForUpdateReqCommChange=xpath://div[text()=" CHANGE ORDER RECORD DISPLAYED, READY FOR UPDATE "]
+getRequisitionCommodityChangeIDChange=xpath://div[text()="Change Order ID# "]/child::span
+txt_newCommodityIDReqCommChange=xpath://input[@id='COMID2']
+txt_newQuantityReqCommChange=xpath://input[@id='QTYORD2']
+txt_newUnitCostReqCommChange=xpath://input[@id='UNCOST2']
+txt_newAmountReqCommChange=xpath://input[@id='NAMT1']
+label_oldAmount1ReqCommChange=xpath:(//td[@class='mat-cell cdk-cell cdk-column-OldAmount mat-column-OldAmount ng-star-inserted'])[1]
+txt_newAmount1ReqCommChange=xpath://input[@id='NAMT1']
+label_oldAmount2ReqCommChange=xpath:(//td[@class='mat-cell cdk-cell cdk-column-OldAmount mat-column-OldAmount ng-star-inserted'])[2]
+txt_newAmount2ReqCommChange=xpath://input[@id='NAMT2']
+label_oldAmount3ReqCommChange=xpath:(//td[@class='mat-cell cdk-cell cdk-column-OldAmount mat-column-OldAmount ng-star-inserted'])[3]
+txt_newAmount3ReqCommChange=xpath://input[@id='NAMT3']
+label_oldAmount4ReqCommChange=xpath:(//td[@class='mat-cell cdk-cell cdk-column-OldAmount mat-column-OldAmount ng-star-inserted'])[4]
+txt_newAmount4ReqCommChange=xpath://input[@id='NAMT4']
+label_oldAmount5ReqCommChange=xpath:(//td[@class='mat-cell cdk-cell cdk-column-OldAmount mat-column-OldAmount ng-star-inserted'])[5]
+txt_newAmount5ReqCommChange=xpath://input[@id='NAMT5']
+label_oldAmount6ReqCommChange=xpath:(//td[@class='mat-cell cdk-cell cdk-column-OldAmount mat-column-OldAmount ng-star-inserted'])[6]
+txt_newAmount6ReqCommChange=xpath://input[@id='NAMT6']
+label_oldAmount7ReqCommChange=xpath:(//td[@class='mat-cell cdk-cell cdk-column-OldAmount mat-column-OldAmount ng-star-inserted'])[7]
+txt_newAmount7ReqCommChange=xpath://input[@id='NAMT7']
+button_saveAccountingChangesReqCommChange=xpath://button[text()=" Save Accounting Changes "]
+banner_recordSavedReqCommChange=xpath://div[text()=" RECORD SAVED "]
+button_SaveReqCommChange=xpath://input[@value="Save"]
+banner_recordUpdatedReqCommChange=xpath://div[text()=" RECORD ALREADY EXISTS, IT WAS UPDATED "]
+button_submitReqCommChange=xpath://input[@class='submitButton']
+banner_COPostedReqCommChange=xpath://div[text()=" CHANGE ORDER RECORD POSTED "]
+link_deleteReqCommChange=xpath://span[text()=" Delete"]
+link_confirmDeleteReqCommChange=xpath://span[text()="Delete"]
+banner_CODeletedReqCommChange=xpath://div[text()=" CHANGE ORDER RECORD DELETED "]
+
+**********************************RequisitionCommodityChangeAfterCOID_Stop*************************
+
+**********************************RequisitionCommodityAddOverview_Start****************************
+
+#RequisitionCommodityAddOverview
+button_AddHeaderInformationReqCommAdd=xpath://span[text()="Add Header Information"]
+button_AddDetailEntryInformationReqCommAdd=xpath://span[text()="Add Detail Entry Information"]
+button_submitReqCommAdd=xpath://span[text()="Submit"]
+banner_COPostedReqCommAdd=xpath://div[text()=" CHANGE ORDER POSTED "]
+link_deleteReqCommAdd=xpath://span[text()=" Delete"]
+link_confirmDeleteReqCommAdd=xpath://span[text()="Delete"]
+banner_CODeletedReqReqCommAdd=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+
+
+**********************************RequisitionCommodityAddOverview_Stop*****************************
+
+**********************************RequisitionCommodityAddHeader_Start******************************
+
+#RequisitionCommodityAddHeader
+txt_documentIDReqCommAdd=xpath://input[@id='DOCID']
+dropDownClick_documentIndicatorReqCommAdd=xpath://mat-select[@id='DOCIND']
+txt_documentReferenceReqCommAdd=xpath://input[@id='DOCREF']
+button_nextReqCommAdd=xpath://button[@type='submit']
+
+**********************************RequisitionCommodityAddHeader_Stop*******************************
+
+**********************************RequisitionCommodityAddDetailSummary_Start***********************
+
+#RequisitionCommodityAddDetailSummary
+button_addCommodityReqCommAdd=xpath://span[text()=" Add Commodity "]
+commodity1ReqCommAdd=xpath://div[text()=" Line 001"]
+button_nextReqCommAddDetailSummary=xpath://button[@type='submit']
+
+**********************************RequisitionCommodityAddDetailSummary_Stop************************
+
+**********************************RequisitionCommodityAddDetailEntry_Start*************************
+
+#RequisitionCommodityAddDetailEntry
+txt_commodityIDReqCommAdd=xpath://input[@id='COMIDA']
+txt_quantityReqCommAdd=xpath://input[@id='LINQTYA']
+txt_unitCoseReqCommAdd=xpath://input[@id='UNCOSTA']
+button_SaveAndReturnReqCommAdd=xpath://span[text()=" Save and Return "]
+
+**********************************RequisitionCommodityAddDetailEntry_Stop**************************
+
+**********************************POBPOITBChangeMenu_Start*****************************************
+
+#POBPOITBChangeMenuChangeMenu
+link_accountingChangePO=xpath://a[text()="Accounting Change"]
+link_commodityChangePO=xpath://a[text()="Commodity Change"]
+link_commodityAddPO=xpath://a[text()="Commodity Add"]
+link_BPOPOAmountAndDateChange=xpath://a[text()="BPO/PO Amount and Date Change"]
+link_invitationToBidDueDateChange=xpath://a[text()="Invitation to Bid Due Date Change"]
+link_purchaseOrderChangeOrderInquiry=xpath://a[text()="Purchase Order Change Order Inquiry"]
+link_yearEndChangeOrderInquiry=xpath://a[text()="Year End Accounting Change Order"]
+
+**********************************POBPOITBChangeMenu_Stop******************************************
+
+**********************************POAccountingChangeBeforeCOID_Start*******************************
+
+#POAccountingChangeBeforeCOIDGenerated
+txt_purchaseOrderIDBeforeCOPOAccChange=xpath://input[@id='PODOC']
+txt_requisitionIDBeforePOAccChange=xpath://input[@id='RQDOC']
+txt_lineNumberBeforePOAccChange=xpath://input[@id='LINENO']
+dropDownClick_yearEndCOBeforePOAccChange=xpath://mat-select[@id='YENDCO']
+txt_documentReferenceBeforeCOPOAccChange=xpath://input[@id='DOCREF']
+button_initiateCOBeforeCOPOAccChange=xpath://button[text()="Initiate Change Order"]
+
+**********************************POAccountingChangeBeforeCOID_Stop********************************
+
+**********************************POAccountingChangeAfterCOID_Start********************************
+
+#POAccountingChangeAfterCOIDGenerated
+banner_CODisplayedReadyForUpdatePOAccChange=xpath://div[text()=" RECORD DISPLAYED, READY FOR UPDATE "]
+banner_inquirySuccessfulPOAccChange=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+getPOAccountingChangeID=xpath://div[text()="Change Order ID# "]/child::span
+button_newAccountingLinePOAccChange=xpath://tbody/tr[2]
+button_saveAccountingChangesPOAccChange=xpath://button[text()=" Save Accounting Changes "]
+dropDownClick_AgencyPOAccChange=xpath://mat-select[@id='AGY1']
+dropDownClick_appropriationYearPOAccChange=xpath://mat-select[@id='APYR1']
+txt_indexPOAccChange=xpath://input[@id='INDEX1']
+txt_programCostAccountPOAccChange=xpath://input[@id='PCA1']
+txt_objectPOAccChange=xpath://input[@id='OBJ1']
+txt_agencyObjectPOAccChange=xpath://input[@id='AOBJ1']
+txt_grantPhaseNumberPOAccChange=xpath://input[@id='GRTPH1']
+txt_projectPhaseNumberPOAccChange=xpath://input[@id='PRJPH1']
+txt_AgencyCode1POAccChange=xpath://input[@id='AG1AG1231']
+txt_AgencyCode2POAccChange=xpath://input[@id='AG2AG1231']
+txt_AgencyCode3POAccChange=xpath://input[@id='AG3AG1231']
+button_savePOAccChange=xpath://button[text()=" Save "]
+banner_recordSavedPOAccChange=xpath://div[text()=" RECORD SAVED "]
+banner_recordReplacedPOAccChange=xpath://div[text()=" RECORD ALREADY EXISTS ON FILE, IT WAS REPLACED "]
+button_submitPOAccChange=xpath://button[text()=" Submit "]
+banner_COPostedPOAccChange=xpath://div[text()=" CHANGE ORDER POSTED "]
+link_deletePOAccChange=xpath://span[text()=" Delete"]
+link_confirmDeletePOAccChange=xpath://span[text()="Delete"]
+
+**********************************POAccountingChangeAfterCOID_Stop*********************************
+
+**********************************POCommodityChangeBeforeCOID_Start********************************
+
+#POCommodityChangeBeforeCOIDGenerated
+txt_purchaseOrderIDBeforeCOPOCommChange=xpath://input[@id='PODOC']
+txt_requisitionIDBeforeCOPOCommChange=xpath://input[@id='RQDOC']
+txt_lineNumberBeforeCOPOCommChange=xpath://input[@id='LINENO']
+txt_documentReferenceBeforeCOPOCommChange=xpath://input[@id='DOCREF']
+button_initiateCOBeforeCOPOCommChange=xpath://button[text()="Initiate Change Order "]
+
+**********************************POCommodityChangeBeforeCOID_Stop*********************************
+
+**********************************POCommodityChangeAfterCOID_Start*********************************
+
+#POCommodityChangeAfterCOIDGenerated
+banner_CODisplayedReadyForUpdatePOCommChange=xpath://div[text()=" CHANGE ORDER RECORD DISPLAYED, READY FOR UPDATE "]
+getPurchaseOrderCommodityChangeIDChange=xpath://div[text()="Change Order ID# "]/child::span
+txt_newCommodityIDPOCommChange=xpath://input[@id='COMID2']
+txt_newQuantityPOCommChange=xpath://input[@id='QTYORD2']
+txt_newUnitCostPOCommChange=xpath://input[@id='UNCOST2']
+txt_newAmountPOCommChange=xpath://input[@id='NAMT1']
+button_savePOCommChange=xpath://button[text()=" Save "]
+banner_recordUpdatedPOCommChange=xpath://div[text()=" RECORD ALREADY EXISTS, IT WAS UPDATED "]
+button_submitPOCommChange=xpath://button[text()=" Submit "]
+banner_COPostedPOCommChange=xpath://div[text()=" CHANGE ORDER RECORD POSTED "]
+banner_COPostedRemainingBalancePOCommChange=xpath://div[text()=" CO POSTED; PO REMAINING BAL = 0; CANCEL PO TO CHANGE STATUS TO CLOS (PCHL8500) "]
+link_deletePOCommChange=xpath://span[text()=" Delete"]
+link_confirmDeletePOCommChange=xpath://span[text()="Delete"]
+
+**********************************POCommodityChangeAfterCOID_Stop**********************************
+
+**********************************PurchaseOrderChangeOrderInquiry_Start****************************
+
+#PurchaseOrderChangeOrderInquiry
+label_POChangeOrderInquiry=xpath://div[text()="Purchase Order Change Order Inquiry"]
+
+**********************************PurchaseOrderChangeOrderInquiry_Stop*****************************
+
+
+**********************************POCommodityAddOverview_Start*************************************
+
+#POCommodityAddOverview
+button_AddHeaderInformationPOCommAdd=xpath://span[text()="Add Header Information"]
+button_AddDetailEntryInformationPOCommAdd=xpath://span[text()="Add Detail Entry Information"]
+button_submitPOCommAdd=xpath://span[text()="Submit"]
+banner_COPostedPOCommAdd=xpath://div[text()=" CHANGE ORDER POSTED "]
+link_deletePOCommAdd=xpath://span[text()=" Delete"]
+link_confirmDeletePOCommAdd=xpath://span[text()="Delete"]
+banner_CODeletedReqPOCommAdd=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+
+**********************************POCommodityAddOverview_Stop**************************************
+
+**********************************POCommodityAddHeader_Start***************************************
+
+#POCommodityAddHeader
+txt_documentIDPOCommAdd=xpath://input[@id='DOCID']
+dropDownClick_documentIndicatorPOCommAdd=xpath://mat-select[@id='DOCIND']
+txt_documentReferencePOCommAdd=xpath://input[@id='DOCREF']
+banner_documentReferenceSuppliedPOCommAdd=xpath://div[text()=" DOCUMENT REFERENCE SUPPLIED, SAVE TO CONFIRM FOR COMMODITY ADD "]
+button_nextPOCommAdd=xpath://button[@type='submit']
+
+**********************************POCommodityAddHeader_Stop****************************************
+
+**********************************POCommodityAddDetailSummary_Start********************************
+
+#POCommodityAddDetailSummary
+button_addCommodityPOCommAdd=xpath://span[text()=" Add Commodity "]
+commodity1POCommAdd=xpath://div[text()=" Line 001"]
+button_nextPOCommAddDetailSummary=xpath://button[@type='submit']
+
+**********************************POCommodityAddDetailSummary_Stop*********************************
+
+**********************************POCommodityAddDetailEntry_Start**********************************
+
+#POCommodityAddDetailEntry
+txt_commodityIDPOCommAdd=xpath://input[@id='COMIDA']
+txt_quantityPOCommAdd=xpath://input[@id='LINQTYA']
+txt_unitCostPOCommAdd=xpath://input[@id='UNCOSTA']
+dropDownClick_agencyPOCommAdd=xpath://mat-select[@id='AGY1']
+dropDownClick_appropriationYearPOCommAdd=xpath://mat-select[@id='APYR1']
+txt_indexPOCommAdd=xpath://input[@id='INDEX1']
+txt_programCostAccountPOCommAdd=xpath://input[@id='PCA1']
+txt_objectPOCommAdd=xpath://input[@id='OBJ1']
+txt_agencyObjectPOCommAdd=xpath://input[@id='AOBJ1']
+txt_grantPhaseNumberPOCommAdd=xpath://input[@id='GRTPH1']
+txt_projectPhaseNumberPOCommAdd=xpath://input[@id='PRJPH1']
+txt_AgencyCode1POCommAdd=xpath://label[text()="Agency Code 1"]/..//input[@role='combobox']
+txt_AgencyCode2POCommAdd=xpath://label[text()="Agency Code 2"]/..//input[@role='combobox']
+txt_AgencyCode3POCommAdd=xpath://label[text()="Agency Code 3"]/..//input[@role='combobox']
+txt_amount1POCommAdd=xpath://input[@id='AMT1']
+label_estimatedTotalCostPOCommAdd=xpath://div[@id='cost']
+button_SaveAndReturnPOCommAdd=xpath://span[text()=" Save and Return "]
+
+**********************************POCommodityAddDetailEntry_Stop***********************************
+
+**********************************BPOPOAmountAndDateChangeBeforeCOID_Start*************************
+
+#BPOPOAmountAndDateChangeBeforeCOID
+txt_BPOPOIDBeforeCO=xpath://input[@id='DOC']
+txt_documentReferenceBeforeCOBPOPOAmountAndDateChange=xpath://input[@id='REF']
+button_initiateCOBeforeCOBPOPOAmountAndDateChange=xpath://button[text()=" Initiate Change Order "]
+
+**********************************BPOPOAmountAndDateChangeBeforeCOID_Stop**************************
+
+**********************************BPOPOAmountAndDateChangeAfterCOID_Start**************************
+
+#BPOPOAmountAndDateChangeAfterCOID
+banner_inquirySuccessfulBPOPOAmountAndDateChange=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+getBPOPOAmountAndDateChangeID=xpath://div[text()="Change Order ID# "]/child::span
+link_deleteBPOPOAmountAndDateChange=xpath://span[text()=" Delete"]
+link_confirmDeleteBPOPOAmountAndDateChange=xpath://span[text()="Delete"]
+dropDownClick_reasonBPOPOAmountAndDateChange=xpath://mat-select[@id='RCODE']
+button_saveBPOPOAmountAndDateChange=xpath://span[text()="Save"]
+banner_recordUpdatedBPOPOAmountAndDateChange=xpath://div[text()=" RECORD UPDATED "]
+radioButton_retainageTypeBPOPOAmountChange=id:RetainageType
+txt_newRetainAmountBPOPOAmountChange=xpath://input[@id="NRTAMT"]
+radioButton_escrowIndicatorBPOPOAmountChange=id:ESCROW
+txt_newEscrowAgentBPOPOAmountChange=xpath://input[@id="NAGY"]
+txt_newAddressCodeBPOPOAmountChange=xpath://input[@id="NADDR"]
+banner_changeOrderPostedBPOPOAmountChange=xpath://div[text()=" CHANGE ORDER POSTED "]
+button_submitChangeOrderBPOPOAmountChange=xpath://button/span[text()="Submit"]
+txt_newContractAmountChangeOrderBPOPOAmountChange=xpath://input[@id="NewcontractAmount"]
+txt_newExpirationDateChangeOrderBPOPOAmountChange=xpath://input[@id="NDATE"]
+txt_newVendorAddressCodeChangeOrderBPOPOAmountChange=xpath://input[@id="NVADD"]
+
+**********************************BPOPOAmountAndDateChangeAfterCOID_Stop***************************
+
+**********************************ITBDueDateChangeBeforeCOID_Start*********************************
+
+#ITBDueDateChangeBeforeCOID
+txt_invitationTOBidIDBeforeCOID=xpath://input[@id='DOC']
+button_initiateBeforeCOIDITBDueDateChange=xpath://button[text()=" Initiate "]
+
+**********************************ITBDueDateChangeBeforeCOID_Stop**********************************
+
+**********************************ITBDueDateChangeAfterCOID_Start**********************************
+
+#ITBDueDateChangeAfterCOID
+banner_inquirySuccessfulITBDueDateChange=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+button_saveITBDueDateChange=xpath://button[contains(text(),'Save')]
+banner_recordCreatedITBDueDateChange=xpath://div[text()=" RECORD CREATED "]
+getITBDueDateChangeID=xpath://div[text()=" Change Order ID# "]/child::span
+calenderIcon_newDueDateITBDueDateChange=xpath://mat-datepicker-toggle/button[@type='button']
+currentDateClick_newDueDateITBDueDateChange=xpath://div[@class='mat-calendar-body-cell-content mat-focus-indicator mat-calendar-body-today']
+txt_newDueDateITBDueDateChange=xpath://input[@id='NEWDTE']
+banner_recordUpdatedITBDueDateChange=xpath://div[text()=" RECORD UPDATED "]
+link_deleteITBDueDateChange=xpath://span[text()=" Delete"]
+link_confirmDeleteITBDueDateChange=xpath://span[text()="Delete"]
+banner_CODeletedITBDueDateChange=xpath://div[text()=" DOCUMENT CHANGE ORDER DELETED "]
+
+**********************************ITBDueDateChangeAfterCOID_Stop***********************************
+
+*********************************SpecificationTermChangeBeforeCOID_Start***************************
+#SpecificationTermChangeBeforeCOID
+txt_documentIDBeforeCoSpecTermChange=xpath://input[@id='DOCID']
+dropDownClick_documentIndicatorBeforeCoSpecTermChange=xpath://mat-select[@id='DOCIND']
+txt_documentReferenceBeforeCoSpecTermChange=xpath://input[@id='DOCREF']
+txt_lineNoBeforeCoSpecTermChange=xpath://input[@id='LINENO']
+button_initiateCOBeforeCoSpecTermChange=xpath://button[text()="Initiate Change Order"]
+
+*********************************SpecificationTermChangeBeforeCOID_Stop****************************
+
+*********************************SpecificationTermChangeAfterCOID_Start****************************
+#SpecificationTermChangeAfterCOID
+banner_inquirySuccessfulSpecTermChange=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+getSpecificationTermChangeID=xpath://div[text()="Change Order ID# "]/child::span
+dropDownClick_blockFunctionSpecTermChange=xpath://div[@class='block']//mat-select[1]
+button_executeSpecTermChange=xpath://span[text()=" Execute "]
+banner_blockInsertedSpecTermChange=xpath://div[text()=" BLOCK INSERTED "]
+txt_specInformation1SpecTermChange=xpath://input[@id='Spec_0']
+button_saveSpecTermChange=xpath://span[text()=" Save "]
+banner_recordReplacedSpecTermChange=xpath://div[text()=" RECORD REPLACED "]
+link_viewAddAttachmentsSpecTermChange=xpath://span[text()=" file_present "]/following::u[text()="View/Add Attachments (0)"]
+button_submitSpecTermChange=xpath://span[text()=" Submit "]
+banner_COPostedSpecTermChange=xpath://div[text()=" CHANGE ORDER POSTED "]
+link_deleteSpecTermChange=xpath://span[text()=" Delete"]
+link_confirmDeleteSpecTermChange=xpath://span[text()="Delete"]
+banner_CODeletedSpecTermChange=xpath://div[text()=" RECORD DOES NOT EXIST "]
+
+*********************************SpecificationTermChangeAfterCOID_Stop*****************************
+
+**********************************RequisitionChangeOrderInquiry_Start******************************
+
+#RequisitionChangeOrderInquiry
+txt_typeInARequisitionIDReqCOInquiry=xpath://input[@id='inputtext']
+link_searchReqCOInquiry=xpath://span[text()="search"]
+banner_inquirySuccessfulReqCOInquiry=xpath://div[text()=" INQUIRY SUCCESSFUL "]
+label_COIDReqCOInquiryReqCOInquiry=xpath://tbody/tr[1]/td[3]
+link_viewChangeOrderReqCOInquiry=xpath://span[text()="View Change Order >"][1]
+
+**********************************RequisitionChangeOrderInquiry_Stop*******************************
+
+**********************************DocumentCancellationBeforeCOID_Start******************************
+
+#DocumentCancellationBeforeCOID
+txt_documentIDDocCancelBeforeCOID=xpath://input[@id='DOC']
+dropDownClick_documentIndicatorDocCancelBeforeCOID=xpath://mat-select[@id='RQPOIND']
+txt_documentReferenceDocCancelBeforeCOID=xpath://input[@id='DOCREF']
+button_initiateCODocCancelBeforeCOID=xpath://button[text()="Initiate Change Order"]
+
+**********************************DocumentCancellationBeforeCOID_Stop******************************
+
+**********************************DocumentCancellationAfterCOID_Start******************************
+
+#DocumentCancellationAfterCOID
+link_addNoteDocCancel=xpath://div[text()='Add Note']
+txt_noteDocCancel=xpath://textarea[@id='InputNote']
+link_saveNoteDocCancel=xpath://div[text()='Save Note']
+button_saveDocCancel=xpath://button[contains(text(),"Save")]
+banner_recordReplacedDocCancel=xpath://div[text()=" RECORD ALREADY EXISTS ON FILE, WAS REPLACED "]
+button_submitDocCancel=xpath://button[contains(text(),"Submit")]
+banner_COPostedDocCancel=xpath://div[text()=" CHANGE ORDER POSTED "]
+link_viewAddAttachmentsDocCancel=xpath://span[text()=" file_present "]/following::u[text()="View/Add Attachments (0)"]
+button_confirmDeleteDocumentCancellation=xpath://button/span[text()="Delete"]
+link_buttonDeleteDocumentCancellation=xpath://span[text()=" Delete"]
+banner_documentCancellation=xpath://div[text()=" DOCUMENT CANCELLATION DELETED "]
+getDocumentCancellationID=xpath://div[@class="title"]/span
+
+**********************************DocumentCancellationAfterCOID_Stop******************************
+
+
+
+
+

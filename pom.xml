@@ -1,0 +1,331 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>GPSKeyword</groupId>
+  <artifactId>GPSKeyword</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+    
+    <properties>
+       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+       <maven.compiler.source>16</maven.compiler.source>
+    <maven.compiler.target>16</maven.compiler.target>
+       </properties>
+  
+<build>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                 <version>3.0.0-M7</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/main/java/KeywordDriverUtil/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </pluginManagement>
+</build> 
+
+
+       <dependencies>
+       
+       <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-support</artifactId>
+    <version>3.141.59</version>
+</dependency>
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
+
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>4.1.1</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>3.17</version>
+</dependency>
+
+<!-- Used to work with the newer excel file format - `.xlsx` -->
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.17</version>
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+    <version>2.12.4</version>
+    
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-annotations</artifactId>
+    <version>2.12.4</version>
+    
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+     <version>2.12.4</version>
+     
+</dependency>
+
+
+<!-- 
+  <dependency>
+    <groupId>Reports</groupId>
+  <artifactId>Reports</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  </dependency>
+
+    <dependency>
+  <groupId>APIUtilities</groupId>
+  <artifactId>APIUtilities</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  </dependency>
+-->
+<!--
+ <dependency>
+    <groupId>UIPerformance</groupId>
+  <artifactId>UIPerformance</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  </dependency>
+  -->
+  <dependency>
+  <groupId>CommonUtilities</groupId>
+  <artifactId>CommonUtilities</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  </dependency>
+  
+
+<!-- https://mvnrepository.com/artifact/org.mongodb/bson -->
+<dependency>
+    <groupId>org.mongodb</groupId>
+    <artifactId>bson</artifactId>
+    <version>4.4.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.4</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.json/json -->
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20140107</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>4.1.1</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-path</artifactId>
+    <version>3.3.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>3.12</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.12</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml-schemas</artifactId>
+    <version>3.12</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>3.3.0</version>
+    <scope>test</scope>
+</dependency>
+
+
+
+  <dependency>
+  <groupId>Reports</groupId>
+  <artifactId>Reports</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  </dependency>
+
+
+
+
+             <dependency>
+                    <groupId>io.appium</groupId>
+                    <artifactId>java-client</artifactId>
+                    <version>7.2.0</version>
+             </dependency>
+
+             <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+             <dependency>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                    <version>1.2.17</version>
+             </dependency>
+             <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+             <dependency>
+                    <groupId>commons-io</groupId>
+                    <artifactId>commons-io</artifactId>
+                    <version>2.11.0</version>
+             </dependency>
+
+
+             <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+             <dependency>
+                    <groupId>org.testng</groupId>
+                    <artifactId>testng</artifactId>
+                    <version>7.4.0</version>
+                    <scope>provided</scope>
+             </dependency>
+
+             <dependency>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-support</artifactId>
+                    <version>3.141.59</version>
+             </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-server</artifactId>
+    <version>3.12.0</version>
+</dependency>
+
+
+
+             <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+             <dependency>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi</artifactId>
+                    <version>3.12</version>
+             </dependency>
+             <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+             <dependency>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi-ooxml</artifactId>
+                    <version>3.9</version>
+             </dependency>
+             <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+             <dependency>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi-ooxml-schemas</artifactId>
+                    <version>3.9</version>
+             </dependency>
+
+             <dependency>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi-scratchpad</artifactId>
+                    <version>5.1.0</version>
+             </dependency>
+
+
+             <dependency>
+                    <groupId>io.rest-assured</groupId>
+                    <artifactId>rest-assured</artifactId>
+                    <version>4.4.0</version>
+             </dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+<dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>javax.mail-api</artifactId>
+    <version>1.6.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/jfree/jfreechart -->
+<dependency>
+    <groupId>jfree</groupId>
+    <artifactId>jfreechart</artifactId>
+    <version>1.0.13</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.w3c/dom -->
+<dependency>
+    <groupId>org.w3c</groupId>
+    <artifactId>dom</artifactId>
+    <version>2.3.0-jaxb-1.0.6</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.xml/jaxp-api -->
+<dependency>
+    <groupId>javax.xml</groupId>
+    <artifactId>jaxp-api</artifactId>
+    <version>1.4.2</version>
+</dependency>
+
+       <dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+    <version>2.12.4</version>
+    
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-annotations</artifactId>
+    <version>2.12.4</version>
+    
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+     <version>2.12.4</version>
+     
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.datatype</groupId>
+    <artifactId>jackson-datatype-jsr310</artifactId>
+    <version>2.13.0</version>
+</dependency>
+<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.3.1</version>
+		</dependency>
+
+
+       </dependencies>
+  
+    
+  
+</project>

@@ -1,0 +1,104 @@
+{
+  "Env": {
+  "SYS1": {
+      "Env": "SYS1",
+      "ConnectionString": "jdbc:sqlserver://HFS1VT-SQNE001.chfs.ds.ky.gov\\SYS1;databaseName=KYHBE;user=ApplicationUser;password=B9dsK#$sZCJ92j=v",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://stu1.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://stu1.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+    "SYS2": {
+      "Env": "SYS2",
+      "ConnectionString": "jdbc:sqlserver://HFS1VT-SQNE001.chfs.ds.ky.gov\\SYS2;databaseName=KYHBE;user=ApplicationUser;password=B9dsK#$sZCJ92j=v",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://stu1.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://stu1.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+    "STU1": {
+      "Env": "STU1",
+      "ConnectionString": "jdbc:sqlserver://HFS1VU-SQNE001.CHFS.DS.KY.GOV\\PERFLoadTest;databaseName=RegressionTesting;user=SupportUser;password=4d9ArSrQz%LBZ!zd",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://stu1.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://stu1.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+    "STU2": {
+      "Env": "STU2",
+      "ConnectionString": "jdbc:sqlserver://HFS1VU-SQNE001.CHFS.DS.KY.GOV\\PERFLoadTest;databaseName=RegressionTesting;user=SupportUser;password=4d9ArSrQz%LBZ!zd",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://stu2.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://stu2.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+    "STU3": {
+      "Env": "STU3",
+      "ConnectionString": "jdbc:sqlserver://HFS1VU-SQNE001.CHFS.DS.KY.GOV\\PERFLoadTest;databaseName=RegressionTesting;user=SupportUser;password=4d9ArSrQz%LBZ!zd",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://stu3.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://stu3.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+    "UAT1": {
+      "Env": "UAT1",
+      "ConnectionString": "jdbc:sqlserver://HFS1VU-SQNE001.CHFS.DS.KY.GOV\\PERFLoadTest;databaseName=RegressionTesting;user=SupportUser;password=4d9ArSrQz%LBZ!zd",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://uat1.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://uat1.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+    "UAT2": {
+      "Env": "UAT2",
+      "ConnectionString": "jdbc:sqlserver://HFS1VU-SQNE001.CHFS.DS.KY.GOV\\PERFLoadTest;databaseName=RegressionTesting;user=SupportUser;password=4d9ArSrQz%LBZ!zd",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://uat2.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://uat2.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+    "UAT3": {
+      "Env": "UAT3",
+      "ConnectionString": "jdbc:sqlserver://HFS1VU-CRNE003C.chfs.ds.ky.gov\\UAT3;databaseName=KYHBE;user=ApplicationUser;password=79TD3&aYd*bpm_^8",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://uat3.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://uat3.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+    "UAT4": {
+      "Env": "UAT4",
+      "ConnectionString": "jdbc:sqlserver://HFS1VU-CRNE003A.chfs.ds.ky.gov\\UAT4;databaseName=KYHBE;user=ApplicationUser;password=79TD3&aYd*bpm_^8",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://uat4.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://uat4.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+    "UAT5": {
+      "Env": "UAT5",
+      "ConnectionString": "jdbc:sqlserver://HFS1VU-SQNE001.CHFS.DS.KY.GOV\\PERFLoadTest;databaseName=RegressionTesting;user=SupportUser;password=4d9ArSrQz%LBZ!zd",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://uat5.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://uat5.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+    "UAT6": {
+      "Env": "UAT6",
+      "ConnectionString": "jdbc:sqlserver://HFS1VU-SQNE001.CHFS.DS.KY.GOV\\PERFLoadTest;databaseName=RegressionTesting;user=SupportUser;password=4d9ArSrQz%LBZ!zd",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://uat6.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://uat6.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+     "TRN1": {
+      "Env": "TRN1",
+      "ConnectionString": "jdbc:sqlserver://HFS1VR-SQNE001.chfs.ds.ky.gov\\TRN1;databaseName=KYHBE;user=ApplicationUser;password=79TD3&aYd*bpm_^8",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://uat6.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://uat6.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+     "TRN5": {
+      "Env": "TRN5",
+      "ConnectionString": "jdbc:sqlserver://HFS1VR-SQNE001.chfs.ds.ky.gov\\TRN5;databaseName=KYHBE;user=ApplicationUser;password=79TD3&aYd*bpm_^8",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://uat6.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://uat6.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    },
+    "PERF": {
+      "Env": "PERF",
+      "ConnectionString": "jdbc:sqlserver://HFS1VU-SQNE001.CHFS.DS.KY.GOV\\PERFLoadTest;databaseName=RegressionTesting;user=SupportUser;password=4d9ArSrQz%LBZ!zd",
+      "MCIURL": "https://uat.kymci.chfsinet.ky.gov/MCI_WCFService/MciService.svc",
+      "EDBCURL": "https://perf.kyrules.chfsinet.ky.gov/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc",
+      "DispositionURL": "https://perf.kyrules.chfsinet.ky.gov/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc"
+    }
+  },
+  "LoggingConnectionString": "jdbc:sqlserver://HFS1VU-SQNE001.CHFS.DS.KY.GOV\\PERFLoadTest;portNumber=1961;databaseName=RegressionTesting;user=SupportUser;password=4d9ArSrQz%LBZ!zd",
+  "LoggingTableName": "RegressionTestScriptData"
+}

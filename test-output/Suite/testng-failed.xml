@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Parameter Test One(failed)">
+    <parameter name="ScenarioName1" value="MDOT_scenario1"/>
+    <classes>
+      <class name="KeywordDriverUtil.KeywordTestNG">
+        <methods>
+          <include name="ExecuteTest1" invocation-numbers="0"/>
+          <include name="TestRunSetUp"/>
+          <include name="TestRunTearDown"/>
+        </methods>
+      </class> <!-- KeywordDriverUtil.KeywordTestNG -->
+    </classes>
+  </test> <!-- Parameter Test One(failed) -->
+</suite> <!-- Failed suite [Suite] -->
